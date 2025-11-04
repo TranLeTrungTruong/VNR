@@ -9,7 +9,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     method: req.method,
     body: req.body,
     hasResendKey: !!process.env.RESEND_API_KEY,
-    notificationEmail: process.env.NOTIFICATION_EMAIL || 'huyhanhoppo@gmail.com'
+    notificationEmail: process.env.NOTIFICATION_EMAIL || 'dieptcseSE173104@fpt.edu.vn'
   });
 
   // Chỉ cho phép POST request
@@ -82,7 +82,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Gửi email notification
     const { data, error } = await resend.emails.send({
       from: 'VNR202 Feedback <onboarding@resend.dev>',
-      to: [process.env.NOTIFICATION_EMAIL || 'huyhanhoppo@gmail.com'],
+      to: [process.env.NOTIFICATION_EMAIL || 'dieptcseSE173104@fpt.edu.vn'],
       subject: `📝 Feedback mới từ VNR202 - Đánh giá ${rating}/5`,
       html: emailHtml,
     });

@@ -12,7 +12,7 @@ Các biến môi trường đã được setup:
 
 ### Biến môi trường mới cần cấu hình:
 - **RESEND_API_KEY** - API key từ Resend.com để gửi email
-- **NOTIFICATION_EMAIL** - Email nhận thông báo feedback (mặc định: huyhanhoppo@gmail.com)
+- **NOTIFICATION_EMAIL** - Email nhận thông báo feedback (mặc định: dieptcseSE173104@fpt.edu.vn)
 
 ### Hướng dẫn cấu hình:
 1. **Đăng ký Resend.com** và lấy API key
