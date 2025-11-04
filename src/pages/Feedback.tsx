@@ -266,7 +266,7 @@ export default function Feedback() {
         >
           <h3 className="font-semibold text-white mb-3">Các cách khác để liên hệ:</h3>
           <ul className="space-y-2 text-sm text-white/85">
-            <li>• Email: nhuttan1325@gmail.com</li>
+            <li>• Email: anhDiepProMax@gmail.com</li>
             <li>• Điện thoại: 0399189976 </li>
             <li>• Facebook: Ho Chi Minh Ideology Vietnam</li>
           </ul>
