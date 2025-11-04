@@ -1,864 +1,220 @@
 {
-    "chapter1": [
-    {
-      "id": 1,
-      "title": "Kiểm tra kiến thức Chương 1",
-      "titleEn": "Chapter 1 Knowledge Test",
-      "description": "Bài kiểm tra về tư tưởng Hồ Chí Minh về vấn đề dân tộc và cách mạng giải phóng dân tộc",
-      "descriptionEn": "Quiz on Ho Chi Minh's thought about the national question and the national liberation revolution",
-      "questions": [
-        {
-          "id": 1,
-          "question": "Hồ Chí Minh đã tiếp cận và giải quyết vấn đề dân tộc theo quan điểm nào?",
-          "questionEn": "How did Ho Chi Minh approach and resolve the national question?",
-          "options": [
-            "Đặt lợi ích dân tộc lên hàng đầu, gắn độc lập dân tộc với CNXH",
-            "Đặt giai cấp lên trên dân tộc",
-            "Chỉ quan tâm đến phong trào cộng sản quốc tế",
-            "Tách rời vấn đề dân tộc và giai cấp"
-          ],
-          "optionsEn": [
-            "Put national interests first, linking national independence with socialism",
-            "Place class interests above national interests",
-            "Focus only on the international communist movement",
-            "Separate the national question from the class question"
-          ],
-          "correct": 0,
-          "explanation": "Hồ Chí Minh đặt lợi ích dân tộc lên hàng đầu, đồng thời gắn độc lập dân tộc với chủ nghĩa xã hội.",
-          "explanationEn": "Ho Chi Minh prioritized national interests and linked national independence with socialism."
-        },
-        {
-          "id": 2,
-          "question": "Theo Hồ Chí Minh, lực lượng lãnh đạo cách mạng giải phóng dân tộc là ai?",
-          "questionEn": "According to Ho Chi Minh, which class leads the national liberation revolution?",
-          "options": [
-            "Giai cấp nông dân",
-            "Giai cấp công nhân",
-            "Giai cấp tư sản dân tộc",
-            "Trí thức tiểu tư sản"
-          ],
-          "optionsEn": [
-            "Peasant class",
-            "Working class",
-            "National bourgeoisie",
-            "Petty-bourgeois intellectuals"
-          ],
-          "correct": 1,
-          "explanation": "Hồ Chí Minh khẳng định giai cấp công nhân là lực lượng lãnh đạo cách mạng.",
-          "explanationEn": "Ho Chi Minh affirmed that the working class is the leading force of the revolution."
-        },
-        {
-          "id": 3,
-          "question": "Con đường cứu nước mà Hồ Chí Minh lựa chọn là gì?",
-          "questionEn": "What path did Ho Chi Minh choose for national salvation?",
-          "options": [
-            "Cách mạng tư sản",
-            "Cách mạng vô sản",
-            "Cải cách dân chủ tư sản",
-            "Bạo động vũ trang tự phát"
-          ],
-          "optionsEn": [
-            "Bourgeois revolution",
-            "Proletarian revolution",
-            "Democratic bourgeois reform",
-            "Spontaneous armed uprising"
-          ],
-          "correct": 1,
-          "explanation": "Hồ Chí Minh lựa chọn con đường cách mạng vô sản để giải phóng dân tộc.",
-          "explanationEn": "Ho Chi Minh chose the path of proletarian revolution to liberate the nation."
-        },
-        {
-          "id": 4,
-          "question": "Theo Hồ Chí Minh, cách mạng giải phóng dân tộc muốn thắng lợi phải dựa vào lực lượng nào?",
-          "questionEn": "According to Ho Chi Minh, which force must the national liberation revolution rely on to succeed?",
-          "options": [
-            "Tầng lớp trí thức",
-            "Quốc tế cộng sản",
-            "Toàn dân tộc",
-            "Quý tộc phong kiến yêu nước"
-          ],
-          "optionsEn": [
-            "The intellectual class",
-            "The Communist International",
-            "The entire nation",
-            "Patriotic feudal aristocracy"
-          ],
-          "correct": 2,
-          "explanation": "Cách mạng giải phóng dân tộc phải dựa vào sức mạnh của toàn dân tộc.",
-          "explanationEn": "The national liberation revolution must rely on the strength of the entire nation."
-        },
-        {
-          "id": 5,
-          "question": "Vì sao Hồ Chí Minh khẳng định cách mạng giải phóng dân tộc phải đi theo con đường cách mạng vô sản?",
-          "questionEn": "Why did Ho Chi Minh assert that the national liberation revolution must follow the path of proletarian revolution?",
-          "options": [
-            "Vì giai cấp công nhân có sứ mệnh lãnh đạo",
-            "Vì chủ nghĩa Mác - Lênin chỉ ra con đường giải phóng triệt để",
-            "Cả hai ý trên",
-            "Vì phong trào tư sản dân tộc đủ mạnh"
-          ],
-          "optionsEn": [
-            "Because the working class has the mission to lead",
-            "Because Marxism–Leninism shows the path to complete liberation",
-            "Both of the above",
-            "Because the national bourgeois movement was strong enough"
-          ],
-          "correct": 2,
-          "explanation": "Chỉ có cách mạng vô sản, dưới sự lãnh đạo của giai cấp công nhân và chủ nghĩa Mác - Lênin, mới đem lại giải phóng dân tộc triệt để.",
-          "explanationEn": "Only a proletarian revolution, under the leadership of the working class and guided by Marxism–Leninism, can achieve complete national liberation."
-        }
-      ]
-    },
-    {
-  "id": 2,
-  "title": "Kiểm tra kiến thức Chương 1 - Phần 2",
-  "titleEn": "Chapter 1 Knowledge Test - Part 2",
-  "description": "Bài kiểm tra về Nền tảng Lý luận và Thực tiễn trong tư tưởng Hồ Chí Minh",
-  "descriptionEn": "Quiz on Theoretical and Practical Foundations in Ho Chi Minh's Thought",
-  "questions": [
-    {
-      "id": 1,
-      "question": "Theo Văn kiện Đại hội Đảng toàn quốc lần thứ VII (1991), Tư tưởng Hồ Chí Minh được định nghĩa là gì?",
-      "questionEn": "According to the 7th National Party Congress (1991), how is Ho Chi Minh's Thought defined?",
-      "options": [
-        "Là sự kết hợp giữa truyền thống dân tộc và tinh hoa văn hóa nhân loại.",
-        "Là kết quả của sự vận dụng và phát triển sáng tạo Chủ nghĩa Mác-Lênin vào điều kiện cụ thể của Việt Nam.",
-        "Là hệ thống lý luận về con đường cách mạng vô sản ở các nước thuộc địa.",
-        "Là tư tưởng chỉ đạo cho cuộc kháng chiến chống thực dân Pháp."
-      ],
-      "optionsEn": [
-        "A combination of national tradition and the essence of world culture.",
-        "The result of creatively applying and developing Marxism–Leninism to Vietnam's specific conditions.",
-        "A theoretical system of the proletarian revolutionary path in colonial countries.",
-        "Guiding ideology for the resistance against French colonialists."
-      ],
-      "correct": 1,
-      "explanation": "Đây là định nghĩa chính thức được nêu trong Văn kiện Đại hội VII, nhấn mạnh sự vận dụng sáng tạo Chủ nghĩa Mác-Lênin.",
-      "explanationEn": "This is the official definition from the 7th Party Congress, emphasizing the creative application of Marxism–Leninism."
-    },
-    {
-      "id": 2,
-      "question": "Luận điểm nào được coi là nội dung cốt lõi, xuyên suốt trong toàn bộ hệ thống tư tưởng Hồ Chí Minh?",
-      "questionEn": "Which thesis is considered the core and throughout Ho Chi Minh's entire ideological system?",
-      "options": [
-        "Xây dựng Nhà nước của dân, do dân, vì dân.",
-        "Đại đoàn kết toàn dân tộc.",
-        "Độc lập dân tộc gắn liền với Chủ nghĩa xã hội.",
-        "Đạo đức cách mạng là cái gốc của người cách mạng."
-      ],
-      "optionsEn": [
-        "Building a State of the people, by the people, for the people.",
-        "Great national unity.",
-        "National independence associated with socialism.",
-        "Revolutionary ethics as the root of a revolutionary."
-      ],
-      "correct": 2,
-      "explanation": "Đây là luận điểm trung tâm và là kim chỉ nam cho con đường phát triển của cách mạng Việt Nam.",
-      "explanationEn": "This is the central thesis and the guideline for the development path of the Vietnamese revolution."
-    },
-    {
-      "id": 3,
-      "question": "Giai đoạn 1911-1920 có ý nghĩa như thế nào trong quá trình hình thành tư tưởng Hồ Chí Minh?",
-      "questionEn": "What is the significance of the 1911–1920 period in forming Ho Chi Minh's thought?",
-      "options": [
-        "Là giai đoạn Người tìm thấy chân lý cứu nước từ Chủ nghĩa Mác-Lênin.",
-        "Là giai đoạn đánh dấu bước ngoặt Người bắt đầu tìm kiếm con đường cứu nước theo khuynh hướng cách mạng vô sản.",
-        "Là giai đoạn Người chuẩn bị về chính trị, tư tưởng và tổ chức cho việc thành lập Đảng.",
-        "Là giai đoạn tư tưởng Hồ Chí Minh được thử thách và hoàn thiện."
-      ],
-      "optionsEn": [
-        "The period when he found the truth of national salvation in Marxism–Leninism.",
-        "The turning point when he began searching for a path of national salvation in the direction of proletarian revolution.",
-        "The period when he prepared politically, ideologically, and organizationally for the founding of the Party.",
-        "The period when his thought was tested and perfected."
-      ],
-      "correct": 1,
-      "explanation": "Giai đoạn này đánh dấu bước ngoặt Người tìm đường cứu nước theo khuynh hướng cách mạng vô sản.",
-      "explanationEn": "This period marked the turning point when he began seeking a path of national salvation through a proletarian revolution."
-    },
-    {
-      "id": 4,
-      "question": "Theo Hồ Chí Minh, nền tảng cốt lõi và quan trọng nhất để hình thành tư tưởng của Người là gì?",
-      "questionEn": "According to Ho Chi Minh, what is the most fundamental and important foundation for forming his thought?",
-      "options": [
-        "Tinh hoa văn hóa phương Đông, đặc biệt là Nho giáo.",
-        "Chủ nghĩa Mác-Lênin.",
-        "Các học thuyết chính trị và triết học Khai sáng phương Tây.",
-        "Truyền thống yêu nước và ý chí bất khuất của dân tộc Việt Nam."
-      ],
-      "optionsEn": [
-        "Eastern cultural essence, especially Confucianism.",
-        "Marxism–Leninism.",
-        "Political and philosophical doctrines of Western Enlightenment.",
-        "Vietnamese patriotic tradition and indomitable spirit."
-      ],
-      "correct": 1,
-      "explanation": "Người đã tìm thấy chân lý cứu nước từ \"Luận cương về vấn đề dân tộc và vấn đề thuộc địa\" của Lênin.",
-      "explanationEn": "He found the truth of national salvation from Lenin's \"Theses on the National and Colonial Questions.\""
-    },
-    {
-      "id": 5,
-      "question": "Tư tưởng về Nhà nước \"của dân, do dân, vì dân\" của Hồ Chí Minh nhấn mạnh điều gì?",
-      "questionEn": "Ho Chi Minh's idea of a 'State of the people, by the people, for the people' emphasizes what?",
-      "options": [
-        "Nhà nước là bộ máy chuyên chính của giai cấp vô sản.",
-        "Nhân dân là chủ thể quyền lực, và chính quyền phải là \"công bộc\" của nhân dân.",
-        "Nhà nước tập trung vào việc phát triển kinh tế làm trọng tâm.",
-        "Mọi người dân đều phải tham gia vào bộ máy nhà nước."
-      ],
-      "optionsEn": [
-        "The state is the dictatorship apparatus of the proletariat.",
-        "The people are the subject of power, and the government must act as the 'servant' of the people.",
-        "The state focuses on economic development as the core.",
-        "Every citizen must participate in the state apparatus."
-      ],
-      "correct": 1,
-      "explanation": "Quan điểm này khẳng định vai trò làm chủ của nhân dân và trách nhiệm phục vụ của chính quyền.",
-      "explanationEn": "This viewpoint affirms the people's mastery and the government's duty to serve the people."
-    },
-    {
-      "id": 6,
-      "question": "Mục đích chính của việc thành lập Mặt trận Việt Minh (5/1941) là gì?",
-      "questionEn": "What was the main purpose of establishing the Viet Minh Front (May 1941)?",
-      "options": [
-        "Tập hợp giai cấp công nhân và nông dân để làm cách mạng ruộng đất.",
-        "Đoàn kết mọi lực lượng yêu nước, không phân biệt giai cấp, tôn giáo để chống kẻ thù chung là phát xít.",
-        "Chuẩn bị cho việc thành lập đội quân chủ lực đầu tiên của cách mạng.",
-        "Lãnh đạo phong trào đấu tranh dân chủ, đòi dân sinh, dân chủ."
-      ],
-      "optionsEn": [
-        "To unite workers and peasants to carry out the agrarian revolution.",
-        "To unite all patriotic forces, regardless of class or religion, against the common fascist enemy.",
-        "To prepare for the creation of the revolution's first main army.",
-        "To lead the democratic struggle for civil rights and livelihood."
-      ],
-      "correct": 1,
-      "explanation": "Việc thành lập Việt Minh thể hiện rõ tư tưởng đại đoàn kết dân tộc, đặt nhiệm vụ giải phóng dân tộc lên trên hết.",
-      "explanationEn": "The establishment of the Viet Minh clearly embodied the idea of great national unity, prioritizing national liberation above all."
-    },
-    {
-      "id": 7,
-      "question": "Phẩm chất đạo đức nào được Hồ Chí Minh coi là \"cái gốc\" của người cách mạng?",
-      "questionEn": "Which moral quality did Ho Chi Minh consider the 'root' of a revolutionary?",
-      "options": [
-        "Trung với nước, Hiếu với dân.",
-        "Yêu thương con người, sống có tình có nghĩa.",
-        "Có tinh thần quốc tế trong sáng.",
-        "Cần, kiệm, liêm, chính, chí công vô tư."
-      ],
-      "optionsEn": [
-        "Loyalty to the country, filial piety to the people.",
-        "Love for humanity, living with affection and meaning.",
-        "Pure international spirit.",
-        "Diligence, thrift, integrity, righteousness, impartiality."
-      ],
-      "correct": 3,
-      "explanation": "“Cần, kiệm, liêm, chính” là những phẩm chất nền tảng, là cái gốc của đạo đức cách mạng.",
-      "explanationEn": "\"Diligence, thrift, integrity, righteousness\" are fundamental virtues and the root of revolutionary ethics."
-    },
-    {
-      "id": 8,
-      "question": "Sự kiện nào chứng tỏ tư tưởng Hồ Chí Minh là một \"triết lý hành động\", có khả năng tự điều chỉnh để phù hợp thực tiễn?",
-      "questionEn": "Which event demonstrates that Ho Chi Minh's thought is a 'philosophy of action' capable of self-adjustment to suit reality?",
-      "options": [
-        "Việc thành lập Đảng Cộng sản Việt Nam năm 1930.",
-        "Việc chủ trì Hội nghị Trung ương 8 (5/1941) và khắc phục hạn chế của Luận cương tháng 10/1930.",
-        "Việc đọc bản Tuyên ngôn Độc lập ngày 2/9/1945.",
-        "Việc tham gia sáng lập Đảng Cộng sản Pháp năm 1920."
-      ],
-      "optionsEn": [
-        "Founding the Communist Party of Vietnam in 1930.",
-        "Chairing the 8th Central Committee Conference (May 1941) and overcoming the limitations of the October 1930 Political Thesis.",
-        "Reading the Declaration of Independence on Sept 2, 1945.",
-        "Co-founding the French Communist Party in 1920."
-      ],
-      "correct": 1,
-      "explanation": "Hội nghị Trung ương 8 cho thấy sự điều chỉnh chiến lược kịp thời, đặt nhiệm vụ giải phóng dân tộc lên hàng đầu.",
-      "explanationEn": "The 8th Central Committee Conference shows timely strategic adjustment, prioritizing national liberation."
-    },
-    {
-      "id": 9,
-      "question": "Theo quan niệm của Hồ Chí Minh, một nền \"độc lập dân tộc\" toàn diện bao gồm những yếu tố nào?",
-      "questionEn": "According to Ho Chi Minh, a comprehensive 'national independence' includes which aspects?",
-      "options": [
-        "Chỉ cần độc lập về mặt chính trị và quân sự.",
-        "Độc lập trên mọi lĩnh vực: chính trị, kinh tế, văn hóa và đối ngoại.",
-        "Tập trung vào độc lập kinh tế, tự chủ sản xuất.",
-        "Có chủ quyền lãnh thổ và được các nước khác công nhận."
-      ],
-      "optionsEn": [
-        "Only political and military independence.",
-        "Independence in all areas: politics, economy, culture, and foreign affairs.",
-        "Focus on economic independence and production autonomy.",
-        "Territorial sovereignty and international recognition."
-      ],
-      "correct": 1,
-      "explanation": "Người khẳng định độc lập dân tộc phải toàn diện trên chính trị, kinh tế, văn hóa và đối ngoại.",
-      "explanationEn": "He asserted that national independence must be comprehensive in politics, economy, culture, and foreign relations."
-    },
-    {
-      "id": 10,
-      "question": "Mối quan hệ giữa Tư tưởng Hồ Chí Minh và Lịch sử Đảng Cộng sản Việt Nam được mô tả như thế nào?",
-      "questionEn": "How is the relationship between Ho Chi Minh's Thought and the history of the Communist Party of Vietnam described?",
-      "options": [
-        "Là mối quan hệ một chiều, tư tưởng chỉ đạo thực tiễn.",
-        "Là hai lĩnh vực độc lập, không liên quan trực tiếp đến nhau.",
-        "Lịch sử Đảng chỉ là một phần nhỏ trong việc hình thành tư tưởng Hồ Chí Minh.",
-        "Là mối quan hệ biện chứng, lịch sử Đảng là minh chứng sinh động cho việc vận dụng và phát triển tư tưởng đó."
-      ],
-      "optionsEn": [
-        "A one-way relationship where ideology only guides practice.",
-        "Two independent fields unrelated to each other.",
-        "The Party's history is only a small part of forming Ho Chi Minh's thought.",
-        "A dialectical relationship where the Party's history vividly proves the application and development of that thought."
-      ],
-      "correct": 3,
-      "explanation": "Lịch sử Đảng là minh chứng sinh động cho quá trình vận dụng và phát triển tư tưởng Hồ Chí Minh.",
-      "explanationEn": "The Party's history vividly demonstrates the application and development of Ho Chi Minh's thought."
-    }
-  ]
-}
-
-  ],
   "chapter2": [
     {
-      "id": 2,
-      "title": "Kiểm tra kiến thức Chương 2",
-      "titleEn": "Chapter 2 Knowledge Test",
-      "description": "Bài kiểm tra về tư tưởng Hồ Chí Minh về chủ nghĩa xã hội và con đường đi lên CNXH",
-      "descriptionEn": "Quiz on Ho Chi Minh's thought about socialism and the path toward socialism",
-      "questions": [
-        {
-          "id": 1,
-          "question": "Theo Hồ Chí Minh, mục tiêu cuối cùng của CNXH là gì?",
-          "questionEn": "According to Ho Chi Minh, what is the ultimate goal of socialism?",
-          "options": [
-            "Xây dựng một xã hội công bằng, dân chủ, văn minh",
-            "Giải phóng dân tộc",
-            "Nâng cao đời sống vật chất và tinh thần của nhân dân",
-            "Xây dựng quân đội hùng mạnh"
-          ],
-          "optionsEn": [
-            "Building a fair, democratic, and civilized society",
-            "National liberation",
-            "Improving the material and spiritual life of the people",
-            "Building a strong army"
-          ],
-          "correct": 0,
-          "explanation": "Hồ Chí Minh khẳng định mục tiêu cuối cùng của CNXH là xây dựng xã hội công bằng, dân chủ, văn minh.",
-          "explanationEn": "Ho Chi Minh affirmed that the ultimate goal of socialism is to build a fair, democratic, and civilized society."
-        },
-        {
-          "id": 2,
-          "question": "Đặc trưng nổi bật nhất của CNXH theo tư tưởng Hồ Chí Minh là gì?",
-          "questionEn": "What is the most prominent characteristic of socialism according to Ho Chi Minh's thought?",
-          "options": [
-            "Không còn chế độ người bóc lột người",
-            "Kinh tế nhà nước chiếm vai trò chủ đạo",
-            "Giai cấp công nhân nắm chính quyền",
-            "Xã hội không có giai cấp"
-          ],
-          "optionsEn": [
-            "The absence of exploitation of man by man",
-            "State economy plays a leading role",
-            "The working class holds political power",
-            "A classless society"
-          ],
-          "correct": 0,
-          "explanation": "CNXH là chế độ không còn áp bức, bóc lột, đem lại hạnh phúc cho nhân dân.",
-          "explanationEn": "Socialism is a system without oppression or exploitation, bringing happiness to the people."
-        },
-        {
-          "id": 3,
-          "question": "Theo Hồ Chí Minh, động lực quan trọng nhất của CNXH là gì?",
-          "questionEn": "According to Ho Chi Minh, what is the most important driving force of socialism?",
-          "options": [
-            "Tinh thần yêu nước",
-            "Lòng tin vào Đảng",
-            "Con người, nhân dân lao động",
-            "Sự giúp đỡ của quốc tế"
-          ],
-          "optionsEn": [
-            "Patriotism",
-            "Faith in the Party",
-            "People, especially the working masses",
-            "International assistance"
-          ],
-          "correct": 2,
-          "explanation": "Hồ Chí Minh coi con người, đặc biệt là nhân dân lao động, là động lực quan trọng nhất của CNXH.",
-          "explanationEn": "Ho Chi Minh considered people, especially the working masses, as the most important driving force of socialism."
-        },
-        {
-          "id": 4,
-          "question": "Con đường đi lên CNXH ở Việt Nam theo Hồ Chí Minh có đặc điểm gì?",
-          "questionEn": "What is the characteristic of the path toward socialism in Vietnam according to Ho Chi Minh?",
-          "options": [
-            "Đi thẳng lên CNXH bỏ qua chế độ tư bản chủ nghĩa",
-            "Quá độ trực tiếp lên cộng sản",
-            "Kết hợp CNXH với CNTB",
-            "Theo mô hình Liên Xô"
-          ],
-          "optionsEn": [
-            "Advance directly to socialism, skipping the capitalist stage",
-            "Transition directly to communism",
-            "Combine socialism with capitalism",
-            "Follow the Soviet model"
-          ],
-          "correct": 0,
-          "explanation": "Việt Nam đi lên CNXH bỏ qua chế độ tư bản chủ nghĩa, phù hợp điều kiện lịch sử.",
-          "explanationEn": "Vietnam proceeds to socialism while skipping the capitalist stage, in line with its historical conditions."
-        },
-        {
-          "id": 5,
-          "question": "Hồ Chí Minh cho rằng xây dựng CNXH phải bắt đầu từ đâu?",
-          "questionEn": "According to Ho Chi Minh, where must the construction of socialism begin?",
-          "options": [
-            "Xây dựng văn hóa",
-            "Xây dựng con người mới",
-            "Phát triển kinh tế",
-            "Cải cách chính trị"
-          ],
-          "optionsEn": [
-            "Building culture",
-            "Building a new human character",
-            "Developing the economy",
-            "Political reform"
-          ],
-          "correct": 2,
-          "explanation": "Phát triển kinh tế là nhiệm vụ trung tâm trong xây dựng CNXH.",
-          "explanationEn": "Developing the economy is the central task in building socialism."
-        }
-      ]
-    },
-    {
-  "id": 5,
-  "title": "Kiểm tra kiến thức Chương 2 - Phân tích và Tổng hợp Dữ liệu Học thuật",
-  "titleEn": "Chapter 2 Knowledge Test - Analysis and Synthesis of Historical Data",
-  "description": "Bài kiểm tra về bối cảnh lịch sử và quá trình đấu tranh giành chính quyền của Đảng Cộng sản Việt Nam (1930–1945).",
-  "descriptionEn": "Quiz on the historical context and the Vietnamese Communist Party's struggle for power (1930–1945).",
-  "questions": [
-    {
       "id": 1,
-      "question": "Nguyên nhân sâu xa dẫn đến sự thất bại của các phong trào yêu nước theo hệ tư tưởng phong kiến và tư sản ở Việt Nam cuối thế kỷ XIX, đầu thế kỷ XX là gì?",
-      "questionEn": "What was the root cause of the failure of patriotic movements with feudal and bourgeois ideologies in Vietnam at the end of the 19th and early 20th centuries?",
-      "options": [
-        "Thiếu vũ khí và tiềm lực kinh tế",
-        "Thiếu sự ủng hộ của quần chúng nhân dân",
-        "Khủng hoảng về đường lối cứu nước và thiếu một giai cấp lãnh đạo tiên tiến",
-        "Sự đàn áp tàn bạo của thực dân Pháp"
-      ],
-      "optionsEn": [
-        "Lack of weapons and economic potential",
-        "Lack of popular support",
-        "Crisis of national salvation strategy and absence of an advanced leading class",
-        "Brutal repression by the French colonialists"
-      ],
-      "correct": 2,
-      "explanation": "Các phong trào này thất bại do thiếu đường lối chính trị đúng đắn, phù hợp với thời đại và chưa có giai cấp lãnh đạo tiên tiến.",
-      "explanationEn": "These movements failed because they lacked a correct political line suited to the era and did not have an advanced leading class."
-    },
-    {
-      "id": 2,
-      "question": "\"Cương lĩnh chính trị đầu tiên\" do Nguyễn Ái Quốc soạn thảo (2/1930) đã xác định lực lượng cách mạng bao gồm những ai?",
-      "questionEn": "According to the First Political Platform drafted by Nguyen Ai Quoc (February 1930), which forces were identified as part of the revolution?",
-      "options": [
-        "Chỉ có giai cấp công nhân và nông dân",
-        "Công nhân, nông dân là gốc, đồng thời đoàn kết với tiểu tư sản, trí thức và lôi kéo phú nông, trung tiểu địa chủ",
-        "Toàn thể dân tộc Việt Nam không phân biệt giai cấp",
-        "Giai cấp công nhân, nông dân và binh lính"
-      ],
-      "optionsEn": [
-        "Only the working class and peasants",
-        "Workers and peasants as the base, allied with petty bourgeois, intellectuals, and drawing in rich peasants and small/medium landlords",
-        "The entire Vietnamese nation regardless of class",
-        "Workers, peasants, and soldiers"
-      ],
-      "correct": 1,
-      "explanation": "Cương lĩnh thể hiện tư tưởng đoàn kết rộng rãi, lấy liên minh công–nông làm nền tảng và lôi kéo các tầng lớp khác.",
-      "explanationEn": "The Platform emphasized broad unity, with the worker–peasant alliance as the foundation and included other patriotic classes."
-    },
-    {
-      "id": 3,
-      "question": "Đâu là hạn chế chủ yếu của \"Luận cương chính trị\" tháng 10/1930?",
-      "questionEn": "What was the main limitation of the October 1930 Political Thesis?",
-      "options": [
-        "Chưa xác định được mục tiêu cuối cùng là đi lên chủ nghĩa cộng sản",
-        "Không nhấn mạnh được mâu thuẫn dân tộc lên hàng đầu và đánh giá chưa đúng vai trò của các lực lượng ngoài công-nông",
-        "Không đề ra được phương pháp cách mạng bạo lực",
-        "Phủ nhận vai trò lãnh đạo của Đảng Cộng sản"
-      ],
-      "optionsEn": [
-        "Did not identify the ultimate goal of advancing to communism",
-        "Failed to emphasize the national contradiction as primary and underestimated the role of forces outside workers and peasants",
-        "Did not propose the method of violent revolution",
-        "Denied the leadership role of the Communist Party"
-      ],
-      "correct": 1,
-      "explanation": "Luận cương nhấn mạnh quá mức đấu tranh giai cấp, chưa thấy rõ mâu thuẫn dân tộc thuộc địa là chủ yếu.",
-      "explanationEn": "The thesis overemphasized class struggle and failed to highlight the colonial national contradiction as the primary issue."
-    },
-    {
-      "id": 4,
-      "question": "Đỉnh cao của cao trào cách mạng 1930-1931 là sự kiện nào?",
-      "questionEn": "What was the peak event of the 1930–1931 revolutionary high tide?",
-      "options": [
-        "Cuộc bãi công của công nhân nhà máy sợi Nam Định",
-        "Cuộc biểu tình của nông dân Hưng Nguyên (Nghệ An)",
-        "Sự ra đời của chính quyền Xô viết Nghệ - Tĩnh",
-        "Hội nghị Ban Chấp hành Trung ương lần thứ nhất"
-      ],
-      "optionsEn": [
-        "Strike of workers at Nam Dinh textile factory",
-        "Peasant demonstration in Hung Nguyen (Nghe An)",
-        "The establishment of the Nghe-Tinh Soviet administration",
-        "The First Central Committee Conference"
-      ],
-      "correct": 2,
-      "explanation": "Chính quyền Xô viết Nghệ - Tĩnh là hình thức chính quyền cách mạng đầu tiên, đánh dấu đỉnh cao của phong trào.",
-      "explanationEn": "The Nghe-Tinh Soviet administration was the first form of revolutionary government, marking the climax of the movement."
-    },
-    {
-      "id": 5,
-      "question": "Sự chuyển hướng chiến lược của Đảng trong giai đoạn 1936-1939 là gì?",
-      "questionEn": "What strategic shift did the Party make during 1936–1939?",
-      "options": [
-        "Chuyển từ đấu tranh vũ trang sang đấu tranh chính trị hòa bình",
-        "Tạm gác khẩu hiệu độc lập dân tộc, tập trung đòi dân sinh, dân chủ",
-        "Chuyển từ hoạt động bí mật sang kết hợp hoạt động bí mật, công khai và nửa công khai",
-        "Chuyển trọng tâm hoạt động từ thành thị về nông thôn"
-      ],
-      "optionsEn": [
-        "Shifted from armed struggle to peaceful political struggle",
-        "Temporarily set aside the goal of national independence to focus on livelihood and democracy",
-        "Shifted from secret activities to a combination of secret, public, and semi-public activities",
-        "Shifted the focus from urban to rural areas"
-      ],
-      "correct": 2,
-      "explanation": "Đảng linh hoạt kết hợp hoạt động bí mật, công khai và nửa công khai để tập hợp quần chúng trong bối cảnh mới.",
-      "explanationEn": "The Party flexibly combined secret, public, and semi-public activities to mobilize the masses in the new context."
-    },
-    {
-      "id": 6,
-      "question": "Hội nghị Trung ương 8 (5/1941) đã đưa ra quyết sách quan trọng nào, khắc phục hoàn toàn hạn chế của Luận cương 10/1930?",
-      "questionEn": "What key decision did the 8th Central Committee Conference (May 1941) make to overcome the October 1930 Thesis's limitations?",
-      "options": [
-        "Đặt nhiệm vụ giải phóng dân tộc lên hàng đầu và cấp bách nhất",
-        "Quyết định khởi nghĩa vũ trang ngay lập tức",
-        "Chủ trương cải cách ruộng đất triệt để",
-        "Kêu gọi sự giúp đỡ từ phe Đồng minh"
-      ],
-      "optionsEn": [
-        "Prioritized and made urgent the task of national liberation",
-        "Decided to immediately launch an armed uprising",
-        "Advocated thorough land reform",
-        "Called for assistance from the Allies"
-      ],
-      "correct": 0,
-      "explanation": "Hội nghị khẳng định quyền lợi của bộ phận, giai cấp phải đặt dưới sự tồn vong của dân tộc.",
-      "explanationEn": "The conference affirmed that the interests of any class must be subordinated to the survival of the nation."
-    },
-    {
-      "id": 7,
-      "question": "Chỉ thị \"Nhật - Pháp bắn nhau và hành động của chúng ta\" (12/3/1945) đã xác định kẻ thù chính, duy nhất trước mắt của cách mạng Việt Nam là ai?",
-      "questionEn": "According to the directive 'Japan and France shooting each other and our action' (March 12, 1945), who was identified as the main and sole immediate enemy of the Vietnamese revolution?",
-      "options": [
-        "Thực dân Pháp và phát xít Nhật",
-        "Bọn phản động thuộc địa và tay sai",
-        "Phát xít Nhật",
-        "Thực dân Pháp"
-      ],
-      "optionsEn": [
-        "French colonialists and Japanese fascists",
-        "Colonial reactionaries and their puppets",
-        "Japanese fascists",
-        "French colonialists"
-      ],
-      "correct": 2,
-      "explanation": "Chỉ thị xác định rõ kẻ thù chính sau khi Nhật đảo chính Pháp là phát xít Nhật.",
-      "explanationEn": "The directive clearly identified Japanese fascists as the main enemy after Japan's coup against France."
-    },
-    {
-      "id": 8,
-      "question": "Thời cơ \"nghìn năm có một\" của Cách mạng Tháng Tám 1945 xuất hiện khi nào?",
-      "questionEn": "When did the 'once-in-a-thousand-years' opportunity for the August Revolution of 1945 appear?",
-      "options": [
-        "Khi Nhật đảo chính Pháp (9/3/1945)",
-        "Khi Hội nghị Trung ương 8 được triệu tập (5/1941)",
-        "Khi Đội Việt Nam Tuyên truyền Giải phóng quân thành lập (22/12/1944)",
-        "Khi Nhật hoàng tuyên bố đầu hàng Đồng minh không điều kiện (15/8/1945)"
-      ],
-      "optionsEn": [
-        "When Japan overthrew France (March 9, 1945)",
-        "When the 8th Central Committee Conference was convened (May 1941)",
-        "When the Vietnam Propaganda Liberation Army Team was established (Dec 22, 1944)",
-        "When the Japanese Emperor declared unconditional surrender to the Allies (Aug 15, 1945)"
-      ],
-      "correct": 3,
-      "explanation": "Sự kiện Nhật đầu hàng Đồng minh tạo khoảng trống quyền lực, điều kiện thuận lợi cho Tổng khởi nghĩa.",
-      "explanationEn": "Japan's unconditional surrender created a power vacuum, providing favorable conditions for the General Uprising."
-    },
-    {
-      "id": 9,
-      "question": "Cách mạng Tháng Tám 1945 mang tính chất gì?",
-      "questionEn": "What was the nature of the August Revolution of 1945?",
-      "options": [
-        "Một cuộc cách mạng tư sản kiểu mới",
-        "Một cuộc cách mạng xã hội chủ nghĩa",
-        "Một cuộc cách mạng giải phóng dân tộc điển hình, mang tính chất dân chủ mới",
-        "Một cuộc cách mạng ruộng đất"
-      ],
-      "optionsEn": [
-        "A new-type bourgeois revolution",
-        "A socialist revolution",
-        "A typical national liberation revolution with a new democratic character",
-        "An agrarian revolution"
-      ],
-      "correct": 2,
-      "explanation": "Cách mạng Tháng Tám là cuộc cách mạng giải phóng dân tộc điển hình, mang tính dân chủ mới.",
-      "explanationEn": "The August Revolution was a typical national liberation revolution with a new democratic character."
-    },
-    {
-      "id": 10,
-      "question": "Đâu là bài học kinh nghiệm quan trọng nhất về xây dựng lực lượng trong Cách mạng Tháng Tám?",
-      "questionEn": "What was the most important lesson on building forces from the August Revolution?",
-      "options": [
-        "Chỉ cần xây dựng lực lượng chính trị của quần chúng",
-        "Phải xây dựng lực lượng cách mạng rộng lớn trên cơ sở khối liên minh công-nông và đoàn kết trong Mặt trận Việt Minh",
-        "Phải ưu tiên xây dựng lực lượng vũ trang thật hùng hậu",
-        "Chỉ cần tập hợp lực lượng ở nông thôn, lấy nông thôn bao vây thành thị"
-      ],
-      "optionsEn": [
-        "Only build the political forces of the masses",
-        "Build a broad revolutionary force based on the worker–peasant alliance and unity within the Viet Minh Front",
-        "Prioritize building a strong armed force",
-        "Focus only on gathering forces in rural areas to encircle cities"
-      ],
-      "correct": 1,
-      "explanation": "Thắng lợi của cách mạng đến từ sức mạnh của toàn dân tộc đoàn kết trong Mặt trận Việt Minh.",
-      "explanationEn": "The revolution's victory came from the strength of the entire nation united in the Viet Minh Front."
-    }
-  ]
-}
-
-  ],
-  "chapter3": [
-    {
-      "id": 3,
-      "title": "Kiểm tra kiến thức Chương 3",
-      "titleEn": "Chapter 3 Knowledge Test",
-      "description": "Bài kiểm tra về tư tưởng Hồ Chí Minh về Đảng Cộng sản Việt Nam",
-      "descriptionEn": "Quiz on Ho Chi Minh's thought about the Communist Party of Vietnam",
+      "title": "Kiểm tra kiến thức Chương 2 - Phần 1",
+      "titleEn": "Chapter 2 Knowledge Test - Part 1",
+      "description": "Bài kiểm tra về xây dựng và bảo vệ chính quyền cách mạng 1945-1946",
+      "descriptionEn": "Quiz on building and protecting the revolutionary government 1945-1946",
       "questions": [
         {
           "id": 1,
-          "question": "Theo Hồ Chí Minh, Đảng Cộng sản Việt Nam ra đời là sự kết hợp của những yếu tố nào?",
-          "questionEn": "According to Ho Chi Minh, which factors led to the formation of the Communist Party of Vietnam?",
+          "question": "Tình hình Việt Nam sau Cách mạng Tháng Tám 1945 được mô tả như thế nào?",
+          "questionEn": "How was Vietnam's situation after the August Revolution of 1945 described?",
           "options": [
-            "Chủ nghĩa Mác - Lênin, phong trào công nhân và phong trào yêu nước",
-            "Phong trào nông dân và phong trào công nhân",
-            "Chủ nghĩa Mác - Lênin và phong trào công nhân",
-            "Phong trào yêu nước và phong trào tư sản dân tộc"
+            "Thời kỳ hoàng kim",
+            "\"Ngàn cân treo sợi tóc\"",
+            "Thời kỳ ổn định",
+            "Thời kỳ phát triển mạnh mẽ"
           ],
           "optionsEn": [
-            "Marxism–Leninism, workers' movement, and national patriotic movement",
-            "Peasant movement and workers' movement",
-            "Marxism–Leninism and workers' movement",
-            "Patriotic movement and national bourgeois movement"
-          ],
-          "correct": 0,
-          "explanation": "Đảng ra đời từ sự kết hợp giữa chủ nghĩa Mác - Lênin, phong trào công nhân và phong trào yêu nước.",
-          "explanationEn": "The Party was formed from the combination of Marxism–Leninism, the workers' movement, and the national patriotic movement."
-        },
-        {
-          "id": 2,
-          "question": "Đảng Cộng sản Việt Nam có bản chất gì?",
-          "questionEn": "What is the nature of the Communist Party of Vietnam?",
-          "options": [
-            "Đại biểu trung thành lợi ích giai cấp công nhân",
-            "Đại biểu trung thành lợi ích của dân tộc",
-            "Mang bản chất giai cấp công nhân đồng thời là đội tiên phong của dân tộc",
-            "Đại biểu của tất cả các giai cấp"
-          ],
-          "optionsEn": [
-            "Faithful representative of the working class interests",
-            "Faithful representative of national interests",
-            "Of the working-class nature and the vanguard of the nation",
-            "Representative of all social classes"
-          ],
-          "correct": 2,
-          "explanation": "Đảng vừa mang bản chất giai cấp công nhân, vừa là đội tiên phong của dân tộc Việt Nam.",
-          "explanationEn": "The Party bears the working-class nature and is simultaneously the vanguard of the Vietnamese nation."
-        },
-        {
-          "id": 3,
-          "question": "Nguyên tắc tổ chức cơ bản của Đảng Cộng sản Việt Nam theo Hồ Chí Minh là gì?",
-          "questionEn": "What is the fundamental organizational principle of the Communist Party of Vietnam according to Ho Chi Minh?",
-          "options": [
-            "Tập trung dân chủ",
-            "Tập quyền tuyệt đối",
-            "Đa nguyên chính trị",
-            "Thống nhất ý chí"
-          ],
-          "optionsEn": [
-            "Democratic centralism",
-            "Absolute centralization",
-            "Political pluralism",
-            "Unity of will"
-          ],
-          "correct": 0,
-          "explanation": "Tập trung dân chủ là nguyên tắc tổ chức cơ bản trong xây dựng Đảng.",
-          "explanationEn": "Democratic centralism is the fundamental organizational principle in building the Party."
-        },
-        {
-          "id": 4,
-          "question": "Theo Hồ Chí Minh, Đảng muốn vững mạnh thì phải như thế nào?",
-          "questionEn": "According to Ho Chi Minh, what conditions must the Party meet to be strong?",
-          "options": [
-            "Có đường lối chính trị đúng đắn",
-            "Có tổ chức chặt chẽ",
-            "Có đội ngũ đảng viên gương mẫu",
-            "Cả ba ý trên"
-          ],
-          "optionsEn": [
-            "Have a correct political line",
-            "Have a tight organization",
-            "Have exemplary party members",
-            "All of the above"
-          ],
-          "correct": 3,
-          "explanation": "Đảng phải có đường lối đúng, tổ chức chặt chẽ và đội ngũ đảng viên gương mẫu.",
-          "explanationEn": "The Party must have a correct line, a tight organization, and exemplary members."
-        },
-        {
-          "id": 5,
-          "question": "Theo Hồ Chí Minh, đạo đức của Đảng là gì?",
-          "questionEn": "According to Ho Chi Minh, what constitutes the Party's morality?",
-          "options": [
-            "Trung với nước, hiếu với dân",
-            "Cần, kiệm, liêm, chính, chí công vô tư",
-            "Suốt đời phấn đấu cho lý tưởng cộng sản",
-            "Tất cả các ý trên"
-          ],
-          "optionsEn": [
-            "Loyalty to the country and filial piety to the people",
-            "Diligence, thrift, integrity, righteousness, impartiality",
-            "Lifelong striving for the communist ideal",
-            "All of the above"
-          ],
-          "correct": 3,
-          "explanation": "Đạo đức của Đảng là trung với nước, hiếu với dân; cần, kiệm, liêm, chính; chí công vô tư; suốt đời phấn đấu cho lý tưởng cộng sản.",
-          "explanationEn": "The Party's morality includes loyalty to the country and the people; diligence, thrift, integrity, righteousness, impartiality; and lifelong striving for the communist ideal."
-        }
-      ]
-    }
-  ],
-  "chapter4": [
-    {
-      "id": 4,
-      "title": "Kiểm tra kiến thức Chương 4",
-      "titleEn": "Chapter 4 Knowledge Test",
-      "description": "Bài kiểm tra về vận dụng tư tưởng Hồ Chí Minh trong sự nghiệp cách mạng hiện nay",
-      "descriptionEn": "Quiz on applying Ho Chi Minh's thought in the current revolutionary cause",
-      "questions": [
-        {
-          "id": 1,
-          "question": "Theo Hồ Chí Minh, mục tiêu và con đường cách mạng Việt Nam hiện nay là gì?",
-          "questionEn": "According to Ho Chi Minh, what is the current goal and path of the Vietnamese revolution?",
-          "options": [
-            "Xây dựng chủ nghĩa xã hội và tiến tới chủ nghĩa cộng sản",
-            "Phát triển chủ nghĩa tư bản",
-            "Xây dựng xã hội dân chủ tư sản",
-            "Tập trung công nghiệp hóa"
-          ],
-          "optionsEn": [
-            "Build socialism and advance to communism",
-            "Develop capitalism",
-            "Build a bourgeois democratic society",
-            "Focus on industrialization"
-          ],
-          "correct": 0,
-          "explanation": "Mục tiêu con đường cách mạng là xây dựng CNXH và tiến tới CNCS.",
-          "explanationEn": "The revolutionary path aims to build socialism and advance to communism."
-        },
-        {
-          "id": 2,
-          "question": "Phát huy sức mạnh dân chủ xã hội chủ nghĩa theo Hồ Chí Minh phải dựa trên nguyên tắc nào?",
-          "questionEn": "According to Ho Chi Minh, on which principle must the power of socialist democracy be based?",
-          "options": [
-            "Dân biết, dân bàn, dân làm, dân kiểm tra",
-            "Đảng quyết định tất cả",
-            "Chỉ thực hiện trong chính trị",
-            "Dựa vào tầng lớp trí thức"
-          ],
-          "optionsEn": [
-            "The people know, discuss, act, and supervise",
-            "The Party decides everything",
-            "Implemented only in politics",
-            "Rely on the intellectual class"
-          ],
-          "correct": 0,
-          "explanation": "Nguyên tắc dân chủ là dân biết, dân bàn, dân làm, dân kiểm tra.",
-          "explanationEn": "The principle of democracy is that the people know, discuss, act, and supervise."
-        },
-        {
-          "id": 3,
-          "question": "Hệ thống chính trị Việt Nam theo Hồ Chí Minh có đặc điểm gì?",
-          "questionEn": "What is the characteristic of Vietnam's political system according to Ho Chi Minh?",
-          "options": [
-            "Đa nguyên chính trị",
-            "Nhất nguyên về chính trị, tư tưởng, tổ chức",
-            "Do tư sản lãnh đạo",
-            "Tách rời dân chủ XHCN"
-          ],
-          "optionsEn": [
-            "Political pluralism",
-            "Monolithic in politics, ideology, and organization",
-            "Led by the bourgeoisie",
-            "Separated from socialist democracy"
+            "Golden age",
+            "\"A thousand pounds hanging by a thread\"",
+            "Stable period",
+            "Strong development period"
           ],
           "correct": 1,
-          "explanation": "Hệ thống chính trị Việt Nam mang tính nhất nguyên và thống nhất dưới sự lãnh đạo của Đảng.",
-          "explanationEn": "Vietnam's political system is monolithic and unified under the Party's leadership."
+          "explanation": "Tình hình Việt Nam sau Cách mạng Tháng Tám 1945 được mô tả là \"Ngàn cân treo sợi tóc\" do nhiều khó khăn nghiêm trọng cả về nội bộ và bên ngoài.",
+          "explanationEn": "Vietnam's situation after the August Revolution of 1945 was described as \"A thousand pounds hanging by a thread\" due to many serious difficulties both internally and externally."
+        },
+        {
+          "id": 2,
+          "question": "Nhiệm vụ lớn trước mắt của Đảng sau Cách mạng Tháng Tám là gì?",
+          "questionEn": "What were the Party's immediate major tasks after the August Revolution?",
+          "options": [
+            "Xây dựng công nghiệp",
+            "Diệt giặc đói, diệt giặc dốt, diệt giặc ngoại xâm",
+            "Phát triển thương mại",
+            "Mở rộng lãnh thổ"
+          ],
+          "optionsEn": [
+            "Build industry",
+            "Eliminate famine enemy, eliminate illiteracy enemy, eliminate foreign invasion enemy",
+            "Develop trade",
+            "Expand territory"
+          ],
+          "correct": 1,
+          "explanation": "Nhiệm vụ lớn trước mắt của Đảng là: Diệt giặc đói, diệt giặc dốt, diệt giặc ngoại xâm.",
+          "explanationEn": "The Party's immediate major tasks were: Eliminate famine enemy, eliminate illiteracy enemy, eliminate foreign invasion enemy."
+        },
+        {
+          "id": 3,
+          "question": "Chỉ thị \"Kháng chiến kiến quốc\" được ban hành vào thời gian nào?",
+          "questionEn": "When was the directive \"Resistance and Nation Building\" issued?",
+          "options": [
+            "25/11/1945",
+            "6/1/1946",
+            "2/3/1946",
+            "9/3/1946"
+          ],
+          "optionsEn": [
+            "25/11/1945",
+            "6/1/1946",
+            "2/3/1946",
+            "9/3/1946"
+          ],
+          "correct": 0,
+          "explanation": "Chỉ thị \"Kháng chiến kiến quốc\" được ban hành vào ngày 25/11/1945.",
+          "explanationEn": "The directive \"Resistance and Nation Building\" was issued on 25/11/1945."
         },
         {
           "id": 4,
-          "question": "Đấu tranh chống suy thoái tư tưởng chính trị, đạo đức, lối sống nhằm mục đích gì?",
-          "questionEn": "What is the purpose of combating the degradation of political ideology, morality, and lifestyle?",
+          "question": "Đến cuối năm 1946, có bao nhiêu người biết chữ quốc ngữ nhờ phong trào \"Bình dân học vụ\"?",
+          "questionEn": "By the end of 1946, how many people knew the national script thanks to the \"Mass Education\" movement?",
           "options": [
-            "Giữ vững vai trò tiên phong của Đảng",
-            "Bảo đảm sự trong sạch của Đảng",
-            "Tăng cường sức mạnh lãnh đạo cách mạng",
-            "Tất cả các ý trên"
+            "1 triệu người",
+            "1,5 triệu người",
+            "2 triệu người",
+            "2,5 triệu người"
           ],
           "optionsEn": [
-            "Maintain the Party's vanguard role",
-            "Ensure the Party's purity",
-            "Strengthen the Party's revolutionary leadership",
-            "All of the above"
+            "1 million people",
+            "1.5 million people",
+            "2 million people",
+            "2.5 million people"
           ],
           "correct": 3,
-          "explanation": "Đấu tranh chống suy thoái nhằm giữ vững vai trò tiên phong, sự trong sạch và tăng cường sức mạnh của Đảng.",
-          "explanationEn": "Combating degradation maintains the Party's vanguard role, ensures its purity, and strengthens its revolutionary leadership."
+          "explanation": "Đến cuối năm 1946, 2,5 triệu người biết chữ quốc ngữ nhờ phong trào \"Bình dân học vụ\" và \"Toàn dân học chữ quốc ngữ\".",
+          "explanationEn": "By the end of 1946, 2.5 million people knew the national script thanks to the \"Mass Education\" and \"All People Learn National Script\" movements."
         },
         {
           "id": 5,
-          "question": "Theo Hồ Chí Minh, phát huy dân chủ phải đi đôi với điều gì?",
-          "questionEn": "According to Ho Chi Minh, what must accompany the promotion of democracy?",
+          "question": "Hiệp định sơ bộ 6/3/1946 giữa Việt Nam và Pháp có nội dung gì?",
+          "questionEn": "What was the content of the Preliminary Agreement 6/3/1946 between Vietnam and France?",
           "options": [
-            "Pháp luật, kỷ cương và đạo đức xã hội",
-            "Quyền lực tuyệt đối của Đảng",
-            "Dân chủ cực đoan",
-            "Tự do tuyệt đối"
+            "Pháp công nhận Việt Nam độc lập hoàn toàn",
+            "Pháp công nhận Việt Nam là một quốc gia tự do",
+            "Việt Nam trở thành thuộc địa của Pháp",
+            "Việt Nam từ bỏ độc lập"
           ],
           "optionsEn": [
-            "Law, discipline, and social ethics",
-            "Absolute power of the Party",
-            "Extreme democracy",
-            "Absolute freedom"
+            "France recognized Vietnam's complete independence",
+            "France recognized Vietnam as a free nation",
+            "Vietnam became a French colony",
+            "Vietnam abandoned independence"
+          ],
+          "correct": 1,
+          "explanation": "Hiệp định sơ bộ 6/3/1946 công nhận Việt Nam là một quốc gia tự do trong khuôn khổ Liên hiệp Pháp.",
+          "explanationEn": "The Preliminary Agreement 6/3/1946 recognized Vietnam as a free nation within the framework of the French Union."
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Kiểm tra kiến thức Chương 2 - Phần 2",
+      "titleEn": "Chapter 2 Knowledge Test - Part 2",
+      "description": "Bài kiểm tra về đường lối kháng chiến và tổ chức thực hiện (1946-1950)",
+      "descriptionEn": "Quiz on resistance policy and implementation (1946-1950)",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Tính chất của cuộc kháng chiến chống Pháp là gì?",
+          "questionEn": "What was the nature of the anti-French resistance?",
+          "options": [
+            "Kháng chiến toàn dân, toàn diện, lâu dài",
+            "Kháng chiến nhanh chóng",
+            "Kháng chiến một phần",
+            "Kháng chiến thụ động"
+          ],
+          "optionsEn": [
+            "All-people, comprehensive, protracted resistance",
+            "Quick resistance",
+            "Partial resistance",
+            "Passive resistance"
           ],
           "correct": 0,
-          "explanation": "Phát huy dân chủ phải gắn liền với pháp luật, kỷ cương và đạo đức xã hội.",
-          "explanationEn": "The promotion of democracy must be accompanied by law, discipline, and social ethics."
+          "explanation": "Tính chất của cuộc kháng chiến chống Pháp là: Kháng chiến toàn dân, toàn diện, lâu dài.",
+          "explanationEn": "The nature of the anti-French resistance was: All-people, comprehensive, protracted resistance."
+        },
+        {
+          "id": 2,
+          "question": "Đến cuối năm 1947, lực lượng vũ trang của ta có bao nhiêu bộ đội chính quy?",
+          "questionEn": "By the end of 1947, how many regular troops did our armed forces have?",
+          "options": [
+            "10 vạn",
+            "12 vạn",
+            "15 vạn",
+            "20 vạn"
+          ],
+          "optionsEn": [
+            "100,000",
+            "120,000",
+            "150,000",
+            "200,000"
+          ],
+          "correct": 1,
+          "explanation": "Đến cuối năm 1947, ta có 12 vạn bộ đội chính quy và 1 triệu dân quân tự vệ.",
+          "explanationEn": "By the end of 1947, we had 120,000 regular troops and 1 million militia and self-defense forces."
+        },
+        {
+          "id": 3,
+          "question": "Chiến dịch Việt Bắc Thu Đông 1947 kết thúc thắng lợi vào ngày nào?",
+          "questionEn": "When did the Viet Bac Autumn-Winter Campaign 1947 end victoriously?",
+          "options": [
+            "15/10/1947",
+            "21/12/1947",
+            "20/1/1948",
+            "6/1950"
+          ],
+          "optionsEn": [
+            "15/10/1947",
+            "21/12/1947",
+            "20/1/1948",
+            "6/1950"
+          ],
+          "correct": 1,
+          "explanation": "Chiến dịch Việt Bắc Thu Đông 1947 kết thúc thắng lợi vào 21/12/1947, bảo toàn được cơ quan đầu não và căn cứ địa kháng chiến.",
+          "explanationEn": "The Viet Bac Autumn-Winter Campaign 1947 ended victoriously on 21/12/1947, preserving the leadership organs and resistance base."
+        },
+        {
+          "id": 4,
+          "question": "Ngày nào Đảng phong hàm Đại tướng cho Võ Nguyên Giáp?",
+          "questionEn": "On what date did the Party confer the rank of General on Vo Nguyen Giap?",
+          "options": [
+            "21/12/1947",
+            "20/1/1948",
+            "11/6/1948",
+            "6/1950"
+          ],
+          "optionsEn": [
+            "21/12/1947",
+            "20/1/1948",
+            "11/6/1948",
+            "6/1950"
+          ],
+          "correct": 1,
+          "explanation": "Ngày 20/1/1948, Đảng phong hàm Đại tướng cho Võ Nguyên Giáp sau chiến thắng Việt Bắc Thu Đông 1947.",
+          "explanationEn": "On 20/1/1948, the Party conferred the rank of General on Vo Nguyen Giap after the Viet Bac Autumn-Winter 1947 victory."
+        },
+        {
+          "id": 5,
+          "question": "Chiến dịch Biên giới Thu Đông 1950 có ý nghĩa gì?",
+          "questionEn": "What was the significance of the Border Autumn-Winter Campaign 1950?",
+          "options": [
+            "Là chiến dịch quân sự lớn đầu tiên mà ta chủ động tấn công",
+            "Là chiến dịch phòng thủ",
+            "Là chiến dịch nhỏ",
+            "Không có ý nghĩa quan trọng"
+          ],
+          "optionsEn": [
+            "It was the first large-scale military campaign that we actively attacked",
+            "It was a defensive campaign",
+            "It was a small campaign",
+            "It had no important significance"
+          ],
+          "correct": 0,
+          "explanation": "Chiến dịch Biên giới Thu Đông 1950 là chiến dịch quân sự lớn đầu tiên mà ta chủ động tấn công. Chiến thắng này đã xoay chuyển tình thế, giúp ta giành được thế chủ động trên chiến trường.",
+          "explanationEn": "The Border Autumn-Winter Campaign 1950 was the first large-scale military campaign that we actively attacked. This victory shifted the situation, helping us gain initiative on the battlefield."
         }
       ]
     }

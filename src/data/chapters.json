@@ -1,31 +1,5 @@
 [
   {
-    "id": 0,
-    "slug": "chuong-nhap-mon",
-    "title": "Chương nhập môn: Đối tượng, chức năng, nhiệm vụ, nội dung và phương pháp nghiên cứu, học tập Lịch sử Đảng Cộng sản Việt Nam",
-    "titleEn": "Introduction: Object, Functions, Tasks, Content and Methods of Studying the History of the Communist Party of Vietnam",
-    "description": "Giới thiệu về môn học Lịch sử Đảng Cộng sản Việt Nam, bao gồm đối tượng nghiên cứu, chức năng, nhiệm vụ, phương pháp nghiên cứu và mục đích của môn học.",
-    "descriptionEn": "Introduction to the subject of the History of the Communist Party of Vietnam, including research objects, functions, tasks, research methods and purposes of the course.",
-    "thumbnail": "https://hdll.vn/FileUpload/Images/hcm_3.jpg",
-    "articles": 4,
-    "quizzes": 2,
-    "readTime": "2 giờ",
-    "readTimeEn": "2 hours"
-  },
-  {
-    "id": 1,
-    "slug": "chuong-1-dang-ra-doi-gianh-chinh-quyen",
-    "title": "Chương 1: Đảng Cộng sản Việt Nam ra đời và lãnh đạo đấu tranh giành chính quyền (1930–1945)",
-    "titleEn": "Chapter 1: The Birth of the Communist Party of Vietnam and Leading the Struggle for Power (1930–1945)",
-    "description": "Nghiên cứu quá trình thành lập Đảng Cộng sản Việt Nam, Cương lĩnh chính trị đầu tiên và vai trò lãnh đạo đấu tranh giành chính quyền từ 1930 đến Cách mạng Tháng Tám 1945.",
-    "descriptionEn": "Study the founding of the Communist Party of Vietnam, the first political platform, and its leadership in the struggle for power from 1930 to the August Revolution of 1945.",
-    "thumbnail": "https://tonghop.kiengiang.dcs.vn/uploads/news/2024_02/anh-2.jpg",
-    "articles": 5,
-    "quizzes": 3,
-    "readTime": "3 giờ",
-    "readTimeEn": "3 hours"
-  },
-  {
     "id": 2,
     "slug": "chuong-2-hai-cuoc-khang-chien",
     "title": "Chương 2: Đảng lãnh đạo hai cuộc kháng chiến, hoàn thành giải phóng dân tộc, thống nhất đất nước (1945–1975)",
@@ -33,21 +7,8 @@
     "description": "Tìm hiểu về vai trò lãnh đạo của Đảng trong kháng chiến chống Pháp (1945-1954) và kháng chiến chống Mỹ (1954-1975), hoàn thành mục tiêu giải phóng dân tộc và thống nhất đất nước.",
     "descriptionEn": "Learn about the Party's leadership role in the resistance against France (1945-1954) and the resistance against America (1954-1975), completing national liberation and reunification.",
     "thumbnail": "https://llct.1cdn.vn/2022/11/14/lyluanchinhtri.vn-home-media-k2-items-cache-_f3223cd8df82a9a2d8d37fafbcfeb167_l.jpg",
-    "articles": 6,
-    "quizzes": 3,
-    "readTime": "4 giờ",
-    "readTimeEn": "4 hours"
-  },
-  {
-    "id": 3,
-    "slug": "chuong-3-doi-moi-va-hoi-nhap",
-    "title": "Chương 3: Đảng lãnh đạo cả nước quá độ lên CNXH và tiến hành công cuộc đổi mới (1975–2018)",
-    "titleEn": "Chapter 3: The Party Leads the Nation's Transition to Socialism and Implements Renovation (1975–2018)",
-    "description": "Phân tích quá trình lãnh đạo xây dựng chủ nghĩa xã hội, công cuộc đổi mới toàn diện, công nghiệp hóa, hiện đại hóa và hội nhập quốc tế từ 1975 đến nay.",
-    "descriptionEn": "Analyze the process of leading socialist construction, comprehensive renovation, industrialization, modernization and international integration from 1975 to present.",
-    "thumbnail": "https://static.mattran.org.vn/zoom/540/uploaded/buidoanhung/2020_05_18/17_5_nguoi-sang-lap-xay-dung-va-ren-luyen-dang-cong-san-viet-nam-2-091218_edhb.jpg",
-    "articles": 7,
-    "quizzes": 3,
+    "articles": 2,
+    "quizzes": 2,
     "readTime": "4 giờ",
     "readTimeEn": "4 hours"
   }

@@ -21,8 +21,6 @@
 - 🤖 **Trợ lý học tập AI**: Gemini API (gemini-1.5-flash) chuyên về Lịch sử Đảng.
 - 📨 **Biểu mẫu phản hồi**: kết nối Supabase, xác thực dữ liệu.
 - 🌍 **Đa ngôn ngữ & dark mode**: lưu cấu hình trong `localStorage`.
-- 👥 **Trang About**: thông tin nhóm, QR code, version auto-update.0399189976`
+- 👥 **Trang About**: thông tin nhóm, QR code, version auto-update.
 * 🌐 Facebook: **VNR202 - Lịch sử Đảng Cộng sản Việt Nam**
----
-⭐ Nếu dự án hữu ích, hãy **star repo** để ủng hộ nhé!
 ```
