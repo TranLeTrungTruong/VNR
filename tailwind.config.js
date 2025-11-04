@@ -124,35 +124,35 @@ export default {
         DEFAULT: {
           css: {
             maxWidth: 'none',
-            color: '#2B1B17',
+            color: '#0f172a', // slate-900
             a: {
-              color: '#8B0000',
+              color: '#4338ca', // indigo-600/700 family
               textDecoration: 'underline',
-              textDecorationColor: '#D4AF37',
+              textDecorationColor: '#93c5fd', // sky-300
               '&:hover': {
-                color: '#D4AF37',
-                textDecorationColor: '#8B0000',
+                color: '#4f46e5', // indigo-600
+                textDecorationColor: '#60a5fa', // sky-400
               },
             },
             h1: {
-              color: '#8B0000',
+              color: '#4338ca', // indigo-600/700
               fontWeight: '700',
             },
             h2: {
-              color: '#8B0000',
+              color: '#4f46e5', // indigo-600
               fontWeight: '600',
             },
             h3: {
-              color: '#B22222',
+              color: '#6366f1', // indigo-500
               fontWeight: '600',
             },
             strong: {
-              color: '#8B0000',
+              color: '#4338ca', // indigo-600/700
               fontWeight: '600',
             },
             blockquote: {
-              borderLeftColor: '#D4AF37',
-              color: '#4B3B31',
+              borderLeftColor: '#60a5fa', // sky-400
+              color: '#334155', // slate-600
             },
           },
         },

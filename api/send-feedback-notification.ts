@@ -9,7 +9,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     method: req.method,
     body: req.body,
     hasResendKey: !!process.env.RESEND_API_KEY,
-    notificationEmail: process.env.NOTIFICATION_EMAIL || 'dieptcseSE173104@fpt.edu.vn'
+    notificationEmail: process.env.NOTIFICATION_EMAIL || 'vnr202nhom5@gmail.com'
   });
 
   // Chỉ cho phép POST request
@@ -21,8 +21,14 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { rating, feedback, email, language } = req.body;
 
     // Validate required fields
-    if (!rating || !feedback) {
-      return res.status(400).json({ error: 'Rating and feedback are required' });
+    const parsedRating = typeof rating === 'string' ? Number(rating) : rating;
+    const safeRating = Number.isFinite(parsedRating) ? Math.max(1, Math.min(5, parsedRating)) : NaN;
+
+    if (!Number.isFinite(safeRating)) {
+      return res.status(400).json({ error: 'Invalid rating. Must be a number from 1 to 5.' });
+    }
+    if (typeof feedback !== 'string' || feedback.trim().length === 0) {
+      return res.status(400).json({ error: 'Feedback is required.' });
     }
 
     // Email template
@@ -45,7 +51,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
               <div style="margin-bottom: 15px;">
                 <strong>⭐ Đánh giá:</strong> 
                 <span style="color: #eab308; font-size: 18px;">
-                  ${'★'.repeat(rating)}${'☆'.repeat(5 - rating)} (${rating}/5)
+                  ${'★'.repeat(safeRating)}${'☆'.repeat(5 - safeRating)} (${safeRating}/5)
                 </span>
               </div>
               
@@ -82,7 +88,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Gửi email notification
     const { data, error } = await resend.emails.send({
       from: 'VNR202 Feedback <onboarding@resend.dev>',
-      to: [process.env.NOTIFICATION_EMAIL || 'dieptcseSE173104@fpt.edu.vn'],
+      to: [process.env.NOTIFICATION_EMAIL || 'vnr202nhom5@gmail.com'],
       subject: `📝 Feedback mới từ VNR202 - Đánh giá ${rating}/5`,
       html: emailHtml,
     });

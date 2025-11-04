@@ -14,7 +14,7 @@ export default function Footer() {
       label: "Facebook",
     },
     { icon: Youtube, href: "#", label: "YouTube" },
-    { icon: Mail, href: "huyhanhoppo@gmail.com", label: "Email" },
+    { icon: Mail, href: "mailto:huyhanhoppo@gmail.com", label: "Email" },
   ];
 
   const siteLinks = [
@@ -34,8 +34,8 @@ export default function Footer() {
 
   return (
     <footer className="relative overflow-hidden">
-      {/* Nền đồng bộ: gradient đỏ→tím + vignette + light sweep */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* Nền mới: indigo/blue dịu + tối vừa phải */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-950/40 via-sky-900/40 to-slate-900/50" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_200px_rgba(0,0,0,0.55)]" />
       <motion.div
         aria-hidden
@@ -50,11 +50,11 @@ export default function Footer() {
           {/* Brand */}
           <div className="md:col-span-2 space-y-4">
             <div className="flex items-center space-x-3">
-              <div className="relative p-2.5 rounded-xl bg-gradient-to-br from-red-600 to-yellow-500 shadow-lg">
+              <div className="relative p-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-sky-400 shadow-lg">
                 <BookOpen className="h-7 w-7 text-white" />
                 <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/20 to-transparent opacity-80" />
               </div>
-              <span className="text-xl font-extrabold bg-gradient-to-r from-white via-amber-100 to-pink-100 bg-clip-text text-transparent">
+              <span className="text-xl font-extrabold bg-gradient-to-r from-white via-indigo-100 to-slate-100 bg-clip-text text-transparent">
                 VNR202
               </span>
             </div>
@@ -71,7 +71,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label={label}
-                  className="text-white/80 hover:text-amber-200 transition-colors"
+                  className="text-white/80 hover:text-gold-200 transition-colors"
                 >
                   <Icon className="h-5 w-5" />
                 </a>
@@ -89,14 +89,14 @@ export default function Footer() {
                 <li key={link.href}>
                   <Link
                     to={link.href}
-                    className="relative inline-flex items-center gap-2 text-white/85 hover:text-amber-200 transition-colors"
+                    className="group relative inline-flex items-center gap-2 text-white/85 hover:text-indigo-200 transition-colors"
                   >
                     <span>{link.label}</span>
                     <span
                       className="h-[2px] w-0 group-hover:w-full transition-all duration-300 rounded-full"
                       style={{
                         background:
-                          "linear-gradient(90deg, rgba(239,68,68,1) 0%, rgba(234,179,8,1) 50%, rgba(168,85,247,1) 100%)",
+                          "linear-gradient(90deg, #4f46e5 0%, #38bdf8 50%, #4f46e5 100%)",
                       }}
                     />
                   </Link>
@@ -115,7 +115,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-white/85 hover:text-amber-200 transition-colors"
+                    className="text-white/85 hover:text-indigo-200 transition-colors"
                   >
                     {link.label}
                   </a>
