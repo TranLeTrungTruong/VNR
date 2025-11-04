@@ -110,23 +110,23 @@
       ]
     },
     {
-      "id": 2,
+  "id": 2,
       "title": "Kiểm tra kiến thức Chương 2 - Phần 2",
       "titleEn": "Chapter 2 Knowledge Test - Part 2",
       "description": "Bài kiểm tra về đường lối kháng chiến và tổ chức thực hiện (1946-1950)",
       "descriptionEn": "Quiz on resistance policy and implementation (1946-1950)",
-      "questions": [
-        {
-          "id": 1,
+  "questions": [
+    {
+      "id": 1,
           "question": "Tính chất của cuộc kháng chiến chống Pháp là gì?",
           "questionEn": "What was the nature of the anti-French resistance?",
-          "options": [
+      "options": [
             "Kháng chiến toàn dân, toàn diện, lâu dài",
             "Kháng chiến nhanh chóng",
             "Kháng chiến một phần",
             "Kháng chiến thụ động"
-          ],
-          "optionsEn": [
+      ],
+      "optionsEn": [
             "All-people, comprehensive, protracted resistance",
             "Quick resistance",
             "Partial resistance",
@@ -151,48 +151,48 @@
             "120,000",
             "150,000",
             "200,000"
-          ],
-          "correct": 1,
+      ],
+      "correct": 1,
           "explanation": "Đến cuối năm 1947, ta có 12 vạn bộ đội chính quy và 1 triệu dân quân tự vệ.",
           "explanationEn": "By the end of 1947, we had 120,000 regular troops and 1 million militia and self-defense forces."
-        },
-        {
-          "id": 3,
+    },
+    {
+      "id": 3,
           "question": "Chiến dịch Việt Bắc Thu Đông 1947 kết thúc thắng lợi vào ngày nào?",
           "questionEn": "When did the Viet Bac Autumn-Winter Campaign 1947 end victoriously?",
-          "options": [
+      "options": [
             "15/10/1947",
             "21/12/1947",
             "20/1/1948",
             "6/1950"
-          ],
-          "optionsEn": [
+      ],
+      "optionsEn": [
             "15/10/1947",
             "21/12/1947",
             "20/1/1948",
             "6/1950"
-          ],
-          "correct": 1,
+      ],
+      "correct": 1,
           "explanation": "Chiến dịch Việt Bắc Thu Đông 1947 kết thúc thắng lợi vào 21/12/1947, bảo toàn được cơ quan đầu não và căn cứ địa kháng chiến.",
           "explanationEn": "The Viet Bac Autumn-Winter Campaign 1947 ended victoriously on 21/12/1947, preserving the leadership organs and resistance base."
-        },
-        {
-          "id": 4,
+    },
+    {
+      "id": 4,
           "question": "Ngày nào Đảng phong hàm Đại tướng cho Võ Nguyên Giáp?",
           "questionEn": "On what date did the Party confer the rank of General on Vo Nguyen Giap?",
-          "options": [
+      "options": [
             "21/12/1947",
             "20/1/1948",
             "11/6/1948",
             "6/1950"
-          ],
-          "optionsEn": [
+      ],
+      "optionsEn": [
             "21/12/1947",
             "20/1/1948",
             "11/6/1948",
             "6/1950"
-          ],
-          "correct": 1,
+      ],
+      "correct": 1,
           "explanation": "Ngày 20/1/1948, Đảng phong hàm Đại tướng cho Võ Nguyên Giáp sau chiến thắng Việt Bắc Thu Đông 1947.",
           "explanationEn": "On 20/1/1948, the Party conferred the rank of General on Vo Nguyen Giap after the Viet Bac Autumn-Winter 1947 victory."
         },
