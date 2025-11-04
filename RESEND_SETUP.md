@@ -1,66 +1,68 @@
-# 📧 Hướng dẫn lấy Resend API Key
+# 📧 Hướng dẫn Resend cho Việt Nam (VN-ready)
 
-## 🎯 **Mục tiêu**
-Lấy Resend API Key để gửi email thông báo khi có feedback mới.
+## 🎯 Mục tiêu
+Thiết lập Resend để gửi email thông báo feedback với cấu hình, ví dụ và lưu ý phù hợp người dùng tại Việt Nam.
 
-## 📝 **Các bước lấy Resend API Key:**
+## 📝 Các bước thiết lập
 
-### **Bước 1: Đăng ký tài khoản Resend**
+### 1) Đăng ký tài khoản Resend
 1. Truy cập: https://resend.com
-2. Click **"Sign Up"** hoặc **"Get Started"**
+2. Chọn **Sign Up / Get Started**
 3. Đăng ký bằng Email hoặc GitHub
-4. Xác thực email (nếu cần)
+4. Xác thực email nếu được yêu cầu
 
-### **Bước 2: Tạo API Key**
-1. Sau khi đăng nhập, vào **Dashboard**
-2. Click vào **"API Keys"** ở sidebar trái hoặc menu
-3. Click **"Create API Key"**
-4. Đặt tên cho API key (ví dụ: `VNR202-Production`)
-5. Chọn **Permissions**: 
-   - ✅ **Sending access** (cho phép gửi email)
-6. Click **"Add"** hoặc **"Create"**
-7. **Copy API Key ngay** (chỉ hiển thị 1 lần!): `re_xxxxxxxxxxxxx`
+### 2) Tạo API Key
+1. Mở **Dashboard** → **API Keys**
+2. Nhấn **Create API Key**
+3. Đặt tên (ví dụ: `VNR202-Production`)
+4. Quyền (Permissions): chọn ✅ **Sending access**
+5. Tạo và sao chép API key ngay (chỉ hiển thị 1 lần), dạng: `re_xxxxxxxxxxxxx`
 
-### **Bước 3: Verify Domain (Tùy chọn)**
-- Nếu muốn dùng domain của bạn (ví dụ: `noreply@yourdomain.com`)
-- Vào **Domains** → **Add Domain** → Thêm DNS records
-- Nếu không verify, có thể dùng domain mặc định: `onboarding@resend.dev`
+### 3) Verify Domain (khuyến nghị nhưng không bắt buộc)
+- Nếu muốn gửi từ địa chỉ như `noreply@yourdomain.vn` hoặc `no-reply@yourdomain.com`, vào **Domains** → **Add Domain** → thêm DNS records theo hướng dẫn.
+- Nếu chưa verify domain, vẫn có thể gửi bằng domain mặc định: `onboarding@resend.dev`.
 
-### **Bước 4: Cấu hình Environment Variables**
+### 4) Cấu hình biến môi trường
 
-#### **Local Development (.env.local):**
-Thêm vào file `.env.local`:
+#### Local Development (`.env.local`)
+Thêm vào file `.env.local` ở thư mục gốc dự án:
 ```env
 RESEND_API_KEY=re_xxxxxxxxxxxxx
-NOTIFICATION_EMAIL=dieptcseSE173104@fpt.com.vn
+# Email nhận thông báo feedback (ví dụ FPT):
+NOTIFICATION_EMAIL=sinhvien@fpt.edu.vn
 ```
 
-#### **Vercel Production:**
-1. Vào Vercel Dashboard → Chọn project → **Settings** → **Environment Variables**
-2. Thêm 2 biến:
-   - **Name**: `RESEND_API_KEY`
-     **Value**: `re_xxxxxxxxxxxxx`
-     **Environment**: Production, Preview, Development (chọn cả 3)
-   
-   - **Name**: `NOTIFICATION_EMAIL`
-     **Value**: `dieptcseSE173104@fpt.com.vn`
-     **Environment**: Production, Preview, Development (chọn cả 3)
-3. Click **Save**
-4. **Redeploy** project để áp dụng thay đổi
+#### Production (Vercel/Netlify)
+1. Mở Project Settings → Environment Variables
+2. Thêm 2 biến sau cho cả 3 môi trường (Production, Preview, Development):
+   - Name: `RESEND_API_KEY` — Value: `re_xxxxxxxxxxxxx`
+   - Name: `NOTIFICATION_EMAIL` — Value: `sinhvien@fpt.edu.vn`
+3. Lưu lại và **Redeploy** để áp dụng
 
-## ✅ **Kiểm tra:**
-1. Gửi feedback từ form `/feedback`
-2. Kiểm tra email `dieptcseSE173104@fpt.com.vn` có nhận được notification không
-3. Kiểm tra Vercel logs nếu có lỗi
+Ghi chú: Mã nguồn hiện đang default gửi đến `vnr202nhom5@gmail.com` nếu không đặt `NOTIFICATION_EMAIL` (xem `api/send-feedback-notification.ts`).
 
-## 📋 **Thông tin Resend:**
-- **Free tier**: 100 emails/ngày, 3,000 emails/tháng
-- **API Key format**: `re_` + 32 ký tự
-- **Default domain**: `onboarding@resend.dev` (không cần verify)
+## ✅ Kiểm tra hoạt động
+1. Mở trang `/feedback`, gửi thử một phản hồi.
+2. Kiểm tra hộp thư `NOTIFICATION_EMAIL` (và cả mục Spam/Quảng cáo).
+3. Xem log (Vercel logs) nếu có lỗi gửi.
+4. Có thể dùng script `test-email-api.js` để gọi thử endpoint server.
 
-## 🚨 **Lưu ý:**
-- ⚠️ API Key chỉ hiển thị 1 lần khi tạo, lưu lại ngay!
-- ⚠️ Không commit API Key lên GitHub
-- ✅ File `.env.local` đã có trong `.gitignore`
-- ✅ Resend API Key chỉ cần trên Vercel (server-side), không expose ra client
+## 🇻🇳 Lưu ý dành cho người dùng tại Việt Nam
+- Tên hiển thị (From name) hỗ trợ tiếng Việt có dấu, ví dụ: `VNR202 Feedback`.
+- Chủ đề (Subject) đang ở dạng tiếng Việt và emoji; có thể sửa trong `api/send-feedback-notification.ts` nếu cần.
+- Một số hộp thư trong nước (ví dụ doanh nghiệp) có thể lọc mạnh; nếu không thấy mail:
+  - Kiểm tra mục Spam/Quảng cáo.
+  - Thêm địa chỉ gửi vào danh bạ/an toàn.
+  - Cân nhắc verify domain riêng để tăng độ tin cậy.
+- Múi giờ khuyến nghị: `Asia/Ho_Chi_Minh` khi hiển thị thời gian trong nội dung email hoặc logs.
+
+## 📋 Thông tin Resend
+- Free tier tham khảo: ~100 emails/ngày (khoảng 3,000 emails/tháng).
+- API Key định dạng: bắt đầu bằng `re_`.
+- Domain mặc định: `onboarding@resend.dev` (không cần verify).
+
+## 🔐 An toàn & bảo mật
+- API Key chỉ hiển thị 1 lần khi tạo — lưu trữ an toàn ngay.
+- Không commit `.env.local` hoặc API Key lên GitHub.
+- API Key chỉ sử dụng phía server (Vercel Function); không expose ra client.
 

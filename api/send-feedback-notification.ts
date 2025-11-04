@@ -20,6 +20,17 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
   try {
     const { rating, feedback, email, language } = req.body;
 
+    // Localize based on language
+    const lang = (typeof language === 'string' ? language : 'vi').toLowerCase();
+    const isVi = lang === 'vi';
+    const locale = isVi ? 'vi-VN' : 'en-US';
+    const timeZone = isVi ? 'Asia/Ho_Chi_Minh' : 'UTC';
+    const languageLabel = isVi ? 'Việt Nam' : 'English';
+    const subjectText = isVi
+      ? `📝 Feedback mới từ VNR202 - Đánh giá ${rating}/5`
+      : `📝 New feedback from VNR202 - Rating ${rating}/5`;
+    const dateTimeText = new Date().toLocaleString(locale, { timeZone });
+
     // Validate required fields
     const parsedRating = typeof rating === 'string' ? Number(rating) : rating;
     const safeRating = Number.isFinite(parsedRating) ? Math.max(1, Math.min(5, parsedRating)) : NaN;
@@ -31,53 +42,53 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
       return res.status(400).json({ error: 'Feedback is required.' });
     }
 
-    // Email template
+    // Email template (localized parts)
     const emailHtml = `
       <!DOCTYPE html>
       <html>
         <head>
           <meta charset="utf-8">
-          <title>Feedback mới từ VNR202</title>
+          <title>${isVi ? 'Feedback mới từ VNR202' : 'New feedback from VNR202'}</title>
         </head>
         <body style="font-family: Arial, sans-serif; line-height: 1.6; color: #333;">
           <div style="max-width: 600px; margin: 0 auto; padding: 20px;">
             <div style="background: linear-gradient(135deg, #ef4444, #eab308, #a855f7); padding: 20px; border-radius: 10px; margin-bottom: 20px;">
-              <h1 style="color: white; margin: 0; text-align: center;">📝 Feedback mới từ VNR202</h1>
+              <h1 style="color: white; margin: 0; text-align: center;">${isVi ? '📝 Feedback mới từ VNR202' : '📝 New feedback from VNR202'}</h1>
             </div>
             
             <div style="background: #f8f9fa; padding: 20px; border-radius: 8px; margin-bottom: 20px;">
-              <h2 style="color: #ef4444; margin-top: 0;">Thông tin Feedback</h2>
+              <h2 style="color: #ef4444; margin-top: 0;">${isVi ? 'Thông tin Feedback' : 'Feedback Details'}</h2>
               
               <div style="margin-bottom: 15px;">
-                <strong>⭐ Đánh giá:</strong> 
+                <strong>${isVi ? '⭐ Đánh giá:' : '⭐ Rating:'}</strong> 
                 <span style="color: #eab308; font-size: 18px;">
                   ${'★'.repeat(safeRating)}${'☆'.repeat(5 - safeRating)} (${safeRating}/5)
                 </span>
               </div>
               
               <div style="margin-bottom: 15px;">
-                <strong>📧 Email người gửi:</strong> 
-                ${email ? `<a href="mailto:${email}" style="color: #a855f7;">${email}</a>` : 'Không cung cấp'}
+                <strong>${isVi ? '📧 Email người gửi:' : '📧 Sender email:'}</strong> 
+                ${email ? `<a href="mailto:${email}" style="color: #a855f7;">${email}</a>` : (isVi ? 'Không cung cấp' : 'Not provided')}
               </div>
               
               <div style="margin-bottom: 15px;">
-                <strong>🌐 Ngôn ngữ:</strong> ${language || 'vi'}
+                <strong>🌐 ${isVi ? 'Ngôn ngữ' : 'Language'}:</strong> ${languageLabel}
               </div>
               
               <div style="margin-bottom: 15px;">
-                <strong>📅 Thời gian:</strong> ${new Date().toLocaleString('vi-VN')}
+                <strong>📅 ${isVi ? 'Thời gian (múi giờ' : 'Time (timezone'}: ${timeZone}):</strong> ${dateTimeText}
               </div>
             </div>
             
             <div style="background: white; padding: 20px; border: 1px solid #e9ecef; border-radius: 8px;">
-              <h3 style="color: #ef4444; margin-top: 0;">Nội dung Feedback</h3>
+              <h3 style="color: #ef4444; margin-top: 0;">${isVi ? 'Nội dung Feedback' : 'Feedback Content'}</h3>
               <div style="background: #f8f9fa; padding: 15px; border-radius: 5px; white-space: pre-wrap;">${feedback}</div>
             </div>
             
             <div style="text-align: center; margin-top: 30px; padding: 20px; background: #f8f9fa; border-radius: 8px;">
               <p style="margin: 0; color: #666;">
-                Email này được gửi tự động từ hệ thống VNR202<br>
-                <small>VNR202 - Nền tảng học tập về Lịch sử Đảng Cộng sản Việt Nam</small>
+                ${isVi ? 'Email này được gửi tự động từ hệ thống VNR202' : 'This email was sent automatically by the VNR202 system'}<br>
+                <small>${isVi ? 'VNR202 - Nền tảng học tập về Lịch sử Đảng Cộng sản Việt Nam' : 'VNR202 - Learning platform for the History of the Communist Party of Vietnam'}</small>
               </p>
             </div>
           </div>
@@ -89,7 +100,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     const { data, error } = await resend.emails.send({
       from: 'VNR202 Feedback <onboarding@resend.dev>',
       to: [process.env.NOTIFICATION_EMAIL || 'vnr202nhom5@gmail.com'],
-      subject: `📝 Feedback mới từ VNR202 - Đánh giá ${rating}/5`,
+      subject: subjectText,
       html: emailHtml,
     });
 
