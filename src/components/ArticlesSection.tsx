@@ -60,8 +60,12 @@ export default function ArticlesSection() {
         {/* Lưới bài viết */}
         <motion.div style={{ scale }} className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {latestArticles.map((article, index) => (
-            <motion.article
+            <Link
               key={article.id}
+              to={`/articles/${article.slug}`}
+              className="block"
+            >
+            <motion.article
               initial={{ opacity: 0, y: 60, scale: 0.9, rotateY: -15 }}
               whileInView={{ opacity: 1, y: 0, scale: 1, rotateY: 0 }}
               viewport={{ once: true }}
@@ -78,7 +82,7 @@ export default function ArticlesSection() {
                 transformStyle: "preserve-3d",
                 perspective: "1000px"
               }}
-              className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_15px_45px_rgba(0,0,0,0.28)]"
+              className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_15px_45px_rgba(0,0,0,0.28)] cursor-pointer"
             >
               {/* Accent gradient khi hover */}
               <motion.div
@@ -137,8 +141,7 @@ export default function ArticlesSection() {
 
                 {/* CTA đọc thêm: gradient chữ đỏ→vàng→tím */}
                 <motion.div whileHover={{ x: 4 }} transition={{ type: "spring", stiffness: 400 }}>
-                  <Link
-                    to={`/articles/${article.slug}`}
+                  <div
                     className="inline-flex items-center gap-2 font-semibold"
                     style={{
                       background:
@@ -150,10 +153,11 @@ export default function ArticlesSection() {
                   >
                     <span>{t("home.articles.readMore")}</span>
                     <ArrowRight className="h-4 w-4 translate-x-0 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  </div>
                 </motion.div>
               </div>
             </motion.article>
+            </Link>
           ))}
         </motion.div>
 

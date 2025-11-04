@@ -144,13 +144,17 @@ export default function Chapters() {
         {/* Articles Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {filteredArticles.map((article, index) => (
-            <motion.article
+            <Link
               key={article.id}
+              to={`/articles/${article.slug}`}
+              className="block"
+            >
+            <motion.article
               initial={{ opacity: 0, y: 30 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: index * 0.06 }}
               className="group rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md
-                         shadow-[0_15px_45px_rgba(0,0,0,0.28)]"
+                         shadow-[0_15px_45px_rgba(0,0,0,0.28)] cursor-pointer"
             >
               {/* Ảnh */}
               <div className="relative h-48 overflow-hidden">
@@ -208,9 +212,7 @@ export default function Chapters() {
                 )}
 
                 {/* CTA đọc thêm: chữ gradient đồng bộ */}
-                <Link
-                  to={`/articles/${article.slug}`}
-                  className="inline-flex items-center gap-2 font-semibold"
+                <div className="inline-flex items-center gap-2 font-semibold"
                   style={{
                     background:
                       "linear-gradient(90deg, rgba(239,68,68,1) 0%, rgba(234,179,8,1) 50%, rgba(168,85,247,1) 100%)",
@@ -221,9 +223,10 @@ export default function Chapters() {
                 >
                   <span>{t("home.articles.readMore")}</span>
                   <ArrowRight className="h-4 w-4 translate-x-0 group-hover:translate-x-1 transition-transform" />
-                </Link>
+                </div>
               </div>
             </motion.article>
+            </Link>
           ))}
         </div>
 
