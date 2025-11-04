@@ -20,7 +20,7 @@ export function AboutTeamSection() {
     >
       <div className="text-center mb-10">
         <div className="inline-flex items-center gap-2 mb-4">
-          <Users className="h-8 w-8 text-purple-400" />
+          <Users className="h-8 w-8 text-amber-400" />
           <h2 className="text-3xl font-bold text-white">
             {isVietnamese ? "Đội ngũ của chúng tôi" : "Our Team"}
           </h2>

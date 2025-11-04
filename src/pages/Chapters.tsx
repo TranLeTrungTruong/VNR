@@ -1,8 +1,8 @@
 import React, { useState, useMemo } from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
-import { motion } from "framer-motion";
-import { Search, ListFilter as Filter, BookOpen, Clock, ArrowRight } from "lucide-react";
+import { motion, AnimatePresence } from "framer-motion";
+import { Search, ListFilter as Filter, BookOpen, Clock, ArrowRight, ArrowLeft } from "lucide-react";
 import chaptersData from "../data/chapters.json";
 import articlesData from "../data/articles.json";
 
@@ -37,8 +37,8 @@ export default function Chapters() {
 
   return (
     <section className="relative min-h-screen pt-20 overflow-hidden">
-      {/* NỀN: gradient đỏ→tím + vignette + light-sweep */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* NỀN: gradient đỏ→vàng + vignette + light-sweep */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
       <motion.div
         aria-hidden
@@ -65,7 +65,7 @@ export default function Chapters() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.15 }}
-          className="rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md p-6 mb-8 shadow-[0_12px_36px_rgba(0,0,0,0.28)]"
+          className="rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md p-4 md:p-6 mb-8 shadow-[0_12px_36px_rgba(0,0,0,0.28)] max-w-5xl mx-2 sm:mx-auto overflow-hidden"
         >
           <div className="flex flex-col md:flex-row gap-4">
             <div className="flex-1 relative">
@@ -75,8 +75,8 @@ export default function Chapters() {
                 placeholder={t("search.placeholder") as string}
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className="w-full pl-10 pr-4 py-3 rounded-lg border border-white/15 bg-white/10 text-white placeholder-white/60
-                           focus:outline-none focus:ring-2 focus:ring-amber-400/60 focus:border-transparent"
+                className="w-full pl-10 pr-4 py-3 rounded-lg border border-white/10 bg-white/90 text-slate-900 placeholder-slate-500 shadow-sm
+                           focus:outline-none focus:ring-2 focus:ring-amber-300/60 focus:border-transparent"
               />
             </div>
 
@@ -85,8 +85,8 @@ export default function Chapters() {
               <select
                 value={selectedChapter ?? ""}
                 onChange={(e) => setSelectedChapter(e.target.value ? parseInt(e.target.value) : null)}
-                className="px-4 py-3 rounded-lg border border-white/15 bg-white/10 text-white focus:outline-none
-                           focus:ring-2 focus:ring-amber-400/60 focus:border-transparent"
+                className="px-4 py-3 rounded-lg border border-white/10 bg-white/90 text-slate-900 shadow-sm w-full md:w-64 focus:outline-none
+                           focus:ring-2 focus:ring-amber-300/60 focus:border-transparent"
               >
                 <option value="">{t("search.all")}</option>
                 {chaptersData.map((chapter) => (
@@ -99,145 +99,163 @@ export default function Chapters() {
           </div>
         </motion.div>
 
-        {/* Chapters Overview */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.25 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
-        >
-          {chaptersData.map((chapter) => (
-            <motion.button
-              type="button"
-              key={chapter.id}
-              whileHover={{ y: -4 }}
-              onClick={() => setSelectedChapter(selectedChapter === chapter.id ? null : chapter.id)}
-              className="group text-left rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md
-                         shadow-[0_12px_36px_rgba(0,0,0,0.28)] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60"
-            >
-              <div className="relative h-32 overflow-hidden">
-                <img
-                  src={chapter.thumbnail}
-                  alt={isVietnamese ? chapter.title : chapter.titleEn}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-                  loading="lazy"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />
-                <div className="absolute top-3 left-3 rounded-full border border-white/20 bg-black/35 backdrop-blur-md px-2.5 py-1">
-                  <span className="text-[11px] text-white/90">{chapter.articles} {isVietnamese ? "bài viết" : "articles"}</span>
-                </div>
-              </div>
-
-              <div className="p-4">
-                <h3 className="font-bold text-white mb-1 text-sm group-hover:text-amber-200 transition-colors">
-                  {isVietnamese ? chapter.title : chapter.titleEn}
-                </h3>
-                <div className="flex items-center text-[12px] text-white/75">
-                  <BookOpen className="h-3.5 w-3.5 mr-1" />
-                  <span>{isVietnamese ? "Bấm để lọc chương" : "Click to filter"}</span>
-                </div>
-              </div>
-            </motion.button>
-          ))}
-        </motion.div>
-
-        {/* Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {filteredArticles.map((article, index) => (
-            <Link
-              key={article.id}
-              to={`/articles/${article.slug}`}
-              className="block"
-            >
-            <motion.article
-              initial={{ opacity: 0, y: 30 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.06 }}
-              className="group rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md
-                         shadow-[0_15px_45px_rgba(0,0,0,0.28)] cursor-pointer"
-            >
-              {/* Ảnh */}
-              <div className="relative h-48 overflow-hidden">
-                <img
-                  src={article.thumbnail}
-                  alt={isVietnamese ? article.title : article.titleEn}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
-                  loading="lazy"
-                />
-                {/* Badge chương */}
-                <div className="absolute top-4 left-4">
-                  <span
-                    className="inline-flex items-center rounded-full border border-white/20 bg-black/35 backdrop-blur-md
-                               px-2.5 py-1 text-[11px] font-medium text-white/90"
-                  >
-                    {getChapterTitle(article.chapterId)}
-                  </span>
-                </div>
-                {/* Overlay */}
-                <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent" />
-              </div>
-
-              {/* Nội dung */}
-              <div className="p-6">
-                <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors">
-                  {isVietnamese ? article.title : article.titleEn}
-                </h3>
-                <p className="text-white/85 mb-4 line-clamp-3 leading-relaxed">
-                  {isVietnamese ? article.excerpt : article.excerptEn}
-                </p>
-
-                <div className="flex items-center justify-between text-sm text-white/75 mb-4">
-                  <div className="flex items-center gap-4">
-                    <span>
-                      {t("article.by")} {article.author}
-                    </span>
-                    <span className="flex items-center">
-                      <Clock className="h-4 w-4 mr-1" />
-                      {isVietnamese ? article.readTime : article.readTimeEn}
-                    </span>
+        {/* Chapters Overview - like Quiz: show only when no chapter is selected */}
+        {selectedChapter === null && (
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.25 }}
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12"
+          >
+            {chaptersData.map((chapter) => (
+              <motion.button
+                type="button"
+                key={chapter.id}
+                whileHover={{ y: -4 }}
+                onClick={() => setSelectedChapter(chapter.id)}
+                className="group text-left rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md
+                           shadow-[0_12px_36px_rgba(0,0,0,0.28)] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400/60 h-full flex flex-col"
+              >
+                <div className="relative h-32 overflow-hidden">
+                  <img
+                    src={chapter.thumbnail}
+                    alt={isVietnamese ? chapter.title : chapter.titleEn}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                    loading="lazy"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/65 via-black/25 to-transparent" />
+                  <div className="absolute top-3 left-3 rounded-full border border-white/20 bg-black/35 backdrop-blur-md px-2.5 py-1">
+                    <span className="text-[11px] text-white/90">{chapter.articles} {isVietnamese ? "bài viết" : "articles"}</span>
                   </div>
                 </div>
 
-                {article.tags && (
-                  <div className="flex flex-wrap gap-2 mb-5">
-                    {article.tags.slice(0, 3).map((tag) => (
-                      <span
-                        key={tag}
-                        className="rounded-full border border-white/15 bg-white/10 text-white/85 px-2 py-1 text-xs"
-                      >
-                        {tag}
-                      </span>
-                    ))}
+                <div className="p-4">
+                  <h3 className="font-bold text-white mb-1 text-sm group-hover:text-amber-200 transition-colors">
+                    {isVietnamese ? chapter.title : chapter.titleEn}
+                  </h3>
+                  <div className="flex items-center text-[12px] text-white/75">
+                    <BookOpen className="h-3.5 w-3.5 mr-1" />
+                    <span>{isVietnamese ? "Bấm để xem bài trong chương" : "Click to view chapter articles"}</span>
                   </div>
-                )}
-
-                {/* CTA đọc thêm: chữ gradient đồng bộ */}
-                <div className="inline-flex items-center gap-2 font-semibold"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, rgba(239,68,68,1) 0%, rgba(234,179,8,1) 50%, rgba(168,85,247,1) 100%)",
-                    WebkitBackgroundClip: "text",
-                    backgroundClip: "text",
-                    color: "transparent",
-                  }}
-                >
-                  <span>{t("home.articles.readMore")}</span>
-                  <ArrowRight className="h-4 w-4 translate-x-0 group-hover:translate-x-1 transition-transform" />
                 </div>
-              </div>
-            </motion.article>
-            </Link>
-          ))}
-        </div>
-
-        {/* Empty state */}
-        {filteredArticles.length === 0 && (
-          <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} className="text-center py-12">
-            <BookOpen className="h-16 w-16 text-white/50 mx-auto mb-4" />
-            <h3 className="text-xl font-semibold text-white mb-2">Không tìm thấy bài viết</h3>
-            <p className="text-white/80">Thử thay đổi từ khóa tìm kiếm hoặc bộ lọc của bạn</p>
+              </motion.button>
+            ))}
           </motion.div>
         )}
+
+        {/* Chapter Detail View - like Quiz list view */}
+        {selectedChapter !== null && (
+          <div className="mb-12">
+            <motion.div
+              initial={{ opacity: 0, x: -20 }}
+              animate={{ opacity: 1, x: 0 }}
+              className="mb-8"
+            >
+              <button
+                onClick={() => setSelectedChapter(null)}
+                className="inline-flex items-center gap-2 font-semibold"
+                style={{
+                  background: "linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)",
+                  WebkitBackgroundClip: "text",
+                  backgroundClip: "text",
+                  color: "transparent",
+                }}
+                title="Trở về"
+                aria-label="Trở về"
+              >
+                <ArrowLeft className="h-5 w-5 text-white/90" aria-hidden />
+              </button>
+            </motion.div>
+
+            {(() => {
+              const chapter = chaptersData.find((c) => c.id === selectedChapter);
+              const chapterArticles = articlesData.filter((a) => a.chapterId === selectedChapter);
+              return (
+                <>
+                  <motion.div
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    className="text-center mb-10"
+                  >
+                    <h2 className="text-3xl md:text-4xl font-extrabold text-white mb-3">
+                      {chapter ? (isVietnamese ? chapter.title : chapter.titleEn) : ""}
+                    </h2>
+                    {chapter && (
+                      <p className="text-white/85 max-w-3xl mx-auto">
+                        {isVietnamese ? chapter.description : chapter.descriptionEn}
+                      </p>
+                    )}
+                  </motion.div>
+
+                  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    {chapterArticles.map((article, index) => (
+                      <Link key={article.id} to={`/articles/${article.slug}`} className="block h-full">
+                        <motion.article
+                          initial={{ opacity: 0, y: 30 }}
+                          animate={{ opacity: 1, y: 0 }}
+                          transition={{ delay: index * 0.06 }}
+                          className="group rounded-2xl overflow-hidden border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_15px_45px_rgba(0,0,0,0.28)] cursor-pointer h-full flex flex-col"
+                        >
+                          <div className="relative h-48 overflow-hidden">
+                            <img
+                              src={article.thumbnail}
+                              alt={isVietnamese ? article.title : article.titleEn}
+                              className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                              loading="lazy"
+                            />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/25 to-transparent" />
+                          </div>
+                          <div className="p-6 flex flex-col h-full">
+                            <h3 className="text-xl font-bold text-white mb-3 group-hover:text-amber-200 transition-colors">
+                              {isVietnamese ? article.title : article.titleEn}
+                            </h3>
+                            <p className="text-white/85 mb-4 line-clamp-3 leading-relaxed">
+                              {isVietnamese ? article.excerpt : article.excerptEn}
+                            </p>
+                            <div className="flex items-center justify-between text-sm text-white/75 mb-4">
+                              <div className="flex items-center gap-4">
+                                <span>
+                                  {t("article.by")} {article.author}
+                                </span>
+                                <span className="flex items-center">
+                                  <Clock className="h-4 w-4 mr-1" />
+                                  {isVietnamese ? article.readTime : article.readTimeEn}
+                                </span>
+                              </div>
+                            </div>
+                            {article.tags && (
+                              <div className="flex flex-wrap gap-2 mb-5">
+                                {article.tags.slice(0, 3).map((tag) => (
+                                  <span key={tag} className="rounded-full border border-white/15 bg-white/10 text-white/85 px-2 py-1 text-xs">
+                                    {tag}
+                                  </span>
+                                ))}
+                              </div>
+                            )}
+                            <div
+                              className="inline-flex items-center gap-2 font-semibold mt-auto"
+                              style={{
+                                background: "linear-gradient(90deg, rgba(234,179,8,1) 0%, rgba(255,232,163,1) 50%, rgba(255,255,255,1) 100%)",
+                                WebkitBackgroundClip: "text",
+                                backgroundClip: "text",
+                                color: "transparent",
+                              }}
+                            >
+                              <span>{t("home.articles.readMore")}</span>
+                              <ArrowRight className="h-4 w-4 translate-x-0 group-hover:translate-x-1 transition-transform" />
+                            </div>
+                          </div>
+                        </motion.article>
+                      </Link>
+                    ))}
+                  </div>
+                </>
+              );
+            })()}
+          </div>
+        )}
+
+        
       </div>
     </section>
   );

@@ -71,7 +71,7 @@ function AppContent() {
       <AnimatePresence mode="wait">
         <motion.main
           key={location.pathname}
-          className={["flex-1", isChatRoute ? "overflow-hidden" : ""].join(" ")}
+          className={["flex-1 pt-16 md:pt-20", isChatRoute ? "overflow-hidden" : ""].join(" ")}
           initial={{ opacity: 0, y: 20, scale: 0.98 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
           exit={{ opacity: 0, y: -20, scale: 0.98 }}

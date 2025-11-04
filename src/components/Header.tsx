@@ -45,10 +45,10 @@ export default function Header() {
       className={[
         "fixed top-0 left-0 right-0 z-50",
         "backdrop-blur-md border-b transition-all duration-300",
-        // Nền & viền theo palette indigo/blue dịu mắt
+        // Nền & viền theo palette đỏ/vàng đồng bộ
         scrolled
           ? "bg-black/30 border-white/15 shadow-lg"
-          : "bg-gradient-to-r from-indigo-600/10 via-sky-500/10 to-indigo-600/10 border-white/10",
+          : "bg-gradient-to-r from-revolutionary-900/40 via-black/40 to-revolutionary-900/40 border-white/10",
       ].join(" ")}
       style={{ willChange: "backdrop-filter, background-color, box-shadow" }}
     >
@@ -66,12 +66,12 @@ export default function Header() {
         <div className="flex justify-between items-center h-16">
           {/* Brand */}
           <Link to="/" className="flex items-center space-x-2 group">
-            <div className="relative p-2.5 rounded-xl bg-gradient-to-br from-indigo-600 to-sky-400 shadow-lg group-hover:shadow-indigo-500/30 transition-all duration-300 group-hover:scale-105">
+            <div className="relative p-2.5 rounded-xl bg-gradient-to-br from-revolutionary-600 to-gold-500 shadow-lg group-hover:shadow-yellow-500/30 transition-all duration-300 group-hover:scale-105">
               <BookOpen className="h-7 w-7 text-white" />
               <div className="absolute inset-0 rounded-xl bg-gradient-to-br from-white/20 to-transparent opacity-80 group-hover:opacity-100 transition-opacity" />
             </div>
             <div>
-              <h1 className="text-xl font-extrabold bg-gradient-to-r from-white via-indigo-100 to-slate-100 bg-clip-text text-transparent">
+              <h1 className="text-xl font-extrabold bg-gradient-to-r from-white via-amber-100 to-slate-100 bg-clip-text text-transparent">
                 VNR202
               </h1>
               <p className="text-xs text-white/80">Lịch sử Đảng Cộng sản Việt Nam</p>
@@ -89,8 +89,8 @@ export default function Header() {
                   className={[
                     "group relative px-2 py-2 text-sm font-medium transition-colors",
                     active
-                      ? "text-indigo-300"
-                      : "text-white/90 hover:text-indigo-200",
+                      ? "text-amber-300"
+                      : "text-white/90 hover:text-amber-200",
                   ].join(" ")}
                 >
                   <span className="relative">
@@ -103,7 +103,7 @@ export default function Header() {
                       ].join(" ")}
                        style={{
                         background:
-                          "linear-gradient(90deg, #4f46e5 0%, #38bdf8 50%, #4f46e5 100%)",
+                          "linear-gradient(90deg, #B22222 0%, #eab308 50%, #B22222 100%)",
                        }}
                     />
                   </span>
@@ -185,7 +185,7 @@ export default function Header() {
           >
             <div
               className="px-2 pt-2 pb-3 space-y-1 border-t border-white/10 rounded-b-xl overflow-hidden \
-                            bg-gradient-to-br from-indigo-700/20 via-sky-600/20 to-indigo-700/20 backdrop-blur-md"
+                            bg-gradient-to-br from-revolutionary-900/30 via-black/30 to-revolutionary-900/30 backdrop-blur-md"
             >
               {navigation.map((item) => {
                 const active = isActive(item.href);
@@ -197,8 +197,8 @@ export default function Header() {
                     className={[
                       "block px-3 py-2 rounded-md text-base font-medium transition-colors",
                       active
-                        ? "text-indigo-300 bg-white/10"
-                        : "text-white/90 hover:text-indigo-200 hover:bg-white/5",
+                        ? "text-amber-300 bg-white/10"
+                        : "text-white/90 hover:text-amber-200 hover:bg-white/5",
                     ].join(" ")}
                   >
                     {item.name}

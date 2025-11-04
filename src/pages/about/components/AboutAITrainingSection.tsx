@@ -47,14 +47,18 @@ export function AboutAITrainingSection() {
 
           <div className="flex flex-col items-center justify-center">
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl border border-white/15 p-8 text-center space-y-6 w-full max-w-sm">
-              <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl">
+              <div className="inline-flex items-center justify-center p-4 bg-gradient-to-br from-revolutionary-600 to-gold-500 rounded-xl">
                 <QrCode className="h-8 w-8 text-white" />
               </div>
 
               <h3 className="text-xl font-bold text-white">{t("about.aiTraining.qrTitle")}</h3>
 
               <div className="relative aspect-square w-full bg-white rounded-xl p-4 flex items-center justify-center">
-                <img src="./image.png" alt="QR Code" className="h-full w-auto object-contain" />
+                <img
+                  src={`https://api.qrserver.com/v1/create-qr-code/?size=600x600&data=${encodeURIComponent('https://vnr202-psi.vercel.app/')}`}
+                  alt="QR Code"
+                  className="h-full w-auto object-contain"
+                />
               </div>
 
               <p className="text-sm text-white/70">

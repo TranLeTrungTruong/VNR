@@ -85,8 +85,8 @@ export default function Quiz() {
   if (!selectedChapter) {
     return (
       <div className="relative min-h-screen pt-20 overflow-hidden">
-        {/* Nền heroistic */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+        {/* Nền heroistic (đồng bộ đỏ/vàng) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
         <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
         <motion.div
           aria-hidden
@@ -161,7 +161,7 @@ export default function Quiz() {
 
     return (
       <div className="relative min-h-screen pt-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
         <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
         <motion.div
           aria-hidden
@@ -180,14 +180,15 @@ export default function Quiz() {
               onClick={backToChapters}
               className="inline-flex items-center gap-2 font-semibold"
               style={{
-                background: 'linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)',
+                background: 'linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent',
               }}
+              title="Trở về"
+              aria-label="Trở về"
             >
-              <ArrowLeft className="h-4 w-4" />
-              <span>{t('quiz.backToChapters')}</span>
+              <ArrowLeft className="h-5 w-5 text-white/90" aria-hidden />
             </button>
           </motion.div>
 
@@ -238,7 +239,7 @@ export default function Quiz() {
 
     return (
       <div className="relative min-h-screen pt-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
         <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
         <motion.div
           aria-hidden
@@ -262,7 +263,7 @@ export default function Quiz() {
               <motion.div
                 className="h-2 rounded-full"
                 style={{
-                  background: 'linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)',
+                  background: 'linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)',
                 }}
                 initial={{ width: 0 }}
                 animate={{ width: `${progress}%` }}
@@ -298,7 +299,7 @@ export default function Quiz() {
                     }`}
                     style={
                       answers[question.id] === index
-                        ? { background: 'linear-gradient(90deg,rgba(239,68,68,.18),rgba(234,179,8,.18),rgba(168,85,247,.18))' }
+                        ? { background: 'linear-gradient(90deg,rgba(239,68,68,.18),rgba(234,179,8,.18),rgba(239,68,68,.18))' }
                         : { background: 'rgba(255,255,255,0.06)' }
                     }
                   >
@@ -308,8 +309,8 @@ export default function Quiz() {
                           answers[question.id] === index ? 'border-transparent' : 'border-white/30'
                         }`}
                         style={
-                          answers[question.id] === index
-                            ? { background: 'linear-gradient(90deg,#ef4444,#eab308,#a855f7)' }
+                      answers[question.id] === index
+                        ? { background: 'linear-gradient(90deg,#eab308,#ffe8a3,#ffffff)' }
                             : {}
                         }
                       >
@@ -349,7 +350,7 @@ export default function Quiz() {
                     onClick={handleNext}
                     disabled={answers[question.id] === undefined}
                     className="flex items-center gap-2 px-4 py-2 rounded-lg text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-colors"
-                    style={{ background: 'linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)' }}
+                    style={{ background: 'linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)' }}
                   >
                     <span>{t('quiz.next')}</span>
                     <ChevronRight className="h-4 w-4" />
@@ -372,7 +373,7 @@ export default function Quiz() {
 
     return (
       <div className="relative min-h-screen pt-20 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+        <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
         <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
         <motion.div
           aria-hidden
@@ -402,7 +403,7 @@ export default function Quiz() {
               {t('quiz.score')}: {score}/{selectedQuiz.questions.length}
             </h2>
             <div className="text-6xl font-extrabold mb-4"
-                 style={{ background: isPassed ? 'linear-gradient(90deg,#16a34a,#22c55e)' : 'linear-gradient(90deg,#ef4444,#a855f7)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
+                 style={{ background: isPassed ? 'linear-gradient(90deg,#16a34a,#22c55e)' : 'linear-gradient(90deg,#eab308,#ffe8a3)', WebkitBackgroundClip: 'text', color: 'transparent' }}>
               {percentage}%
             </div>
             <p className="text-white/85">
@@ -413,7 +414,7 @@ export default function Quiz() {
               <button
                 onClick={resetQuiz}
                 className="flex items-center gap-2 px-6 py-3 rounded-lg text-white font-semibold transition-colors"
-                style={{ background: 'linear-gradient(90deg,#3b82f6,#06b6d4)' }}
+                style={{ background: 'linear-gradient(90deg,#eab308,#ffe8a3)' }}
               >
                 <RotateCcw className="h-4 w-4" />
                 <span>{t('quiz.tryAgain')}</span>
@@ -477,7 +478,7 @@ export default function Quiz() {
                               optionIndex === question.correct
                                 ? { background: 'linear-gradient(90deg,rgba(34,197,94,.18),rgba(16,185,129,.18))' }
                                 : optionIndex === userAnswer && !isCorrect
-                                ? { background: 'linear-gradient(90deg,rgba(239,68,68,.18),rgba(168,85,247,.18))' }
+                                ? { background: 'linear-gradient(90deg,rgba(239,68,68,.18),rgba(234,179,8,.18))' }
                                 : { background: 'rgba(255,255,255,0.06)' }
                             }
                           >
@@ -498,7 +499,7 @@ export default function Quiz() {
                       </div>
 
                       <div className="rounded-lg p-4"
-                           style={{ background: 'linear-gradient(90deg,rgba(59,130,246,.18),rgba(6,182,212,.18))', border: '1px solid rgba(255,255,255,0.15)' }}>
+                           style={{ background: 'linear-gradient(90deg,rgba(239,68,68,.14),rgba(234,179,8,.14))', border: '1px solid rgba(255,255,255,0.15)' }}>
                         <h5 className="font-semibold text-white mb-2">
                           {t('quiz.explanation')}:
                         </h5>

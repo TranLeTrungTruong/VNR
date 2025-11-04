@@ -72,7 +72,7 @@ export default function HeroSection() {
       opacity: 1,
       y: 0,
       rotateX: 0,
-      transition: { duration: 0.6, ease: [0.23, 1, 0.32, 1] },
+      transition: { duration: 0.6, ease: 'easeInOut' },
     },
   };
 
@@ -103,8 +103,8 @@ export default function HeroSection() {
                   filter: "saturate(1.05) contrast(1.05)",
                 }}
               />
-              {/* Overlay gradient đỏ → tím → đen */}
-              <div className="absolute inset-0 bg-gradient-to-br from-[#721616]/75 via-[#3b0f4a]/70 to-black/75" />
+              {/* Overlay gradient đỏ → vàng → đen (đồng bộ palette) */}
+              <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-800/70 via-gold-700/25 to-black/80" />
               {/* Vignette viền tối */}
               <div className="pointer-events-none absolute inset-0 ring-0 [box-shadow:inset_0_0_200px_rgba(0,0,0,0.6)]" />
               {/* Light sweep chạy ngang (ánh đèn lễ đài) */}
@@ -179,7 +179,7 @@ export default function HeroSection() {
                   rotateZ: [-2, 2, -2],
                   transition: { duration: 0.3 }
                 }}
-                className="inline-block mr-3 bg-gradient-to-r from-white via-blue-100 to-yellow-100 bg-clip-text text-transparent will-change-transform cursor-default"
+                className="inline-block mr-3 bg-gradient-to-r from-gold-200 via-amber-100 to-white bg-clip-text text-transparent will-change-transform cursor-default"
               >
                 {word}
               </motion.span>
@@ -206,7 +206,7 @@ export default function HeroSection() {
         >
           <Link to="/chapters">
             <motion.button
-              className="group relative px-8 py-4 bg-gradient-to-r from-red-600 to-yellow-500 rounded-full text-white font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-200"
+              className="group relative px-8 py-4 bg-gradient-to-r from-amber-600 to-amber-400 rounded-full text-white font-semibold text-lg shadow-xl hover:shadow-2xl transition-all duration-200"
               whileHover={{ scale: 1.05, translateY: -1 }}
               whileTap={{ scale: 0.96 }}
             >

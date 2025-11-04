@@ -9,7 +9,7 @@ export function AboutHero() {
   return (
     <div className="text-center mb-16">
       <motion.div
-        className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-red-600 to-yellow-500 rounded-2xl shadow-xl mb-6"
+        className="inline-flex items-center justify-center p-3 bg-gradient-to-br from-amber-600 to-amber-400 rounded-2xl shadow-xl mb-6"
         whileHover={{ scale: 1.05 }}
         transition={{ type: "spring", stiffness: 300 }}
       >

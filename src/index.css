@@ -5,7 +5,7 @@
 @layer base {
   /* Global palette: light overall, dark buttons */
   body {
-    @apply bg-slate-50 text-slate-900;
+    @apply bg-parchment-100 text-deeptext-900;
   }
 
   .dark body {
@@ -13,43 +13,43 @@
   }
 
   h1, h2, h3, h4, h5, h6 {
-    @apply font-serif text-indigo-700;
+    @apply font-serif text-revolutionary-700;
   }
 
   .dark h1, .dark h2, .dark h3, .dark h4, .dark h5, .dark h6 {
-    @apply text-indigo-300;
+    @apply text-gold-300;
   }
 
   a {
-    @apply text-indigo-700 hover:text-indigo-600 transition-colors duration-200;
+    @apply text-revolutionary-700 hover:text-gold-600 transition-colors duration-200;
   }
 
   .dark a {
-    @apply text-indigo-300 hover:text-indigo-200;
+    @apply text-gold-300 hover:text-gold-200;
   }
 
   /* Selection color */
   ::selection {
-    @apply bg-indigo-200 text-slate-900;
+    @apply bg-gold-200 text-deeptext-900;
   }
 
   .dark ::selection {
-    @apply bg-indigo-700 text-slate-50;
+    @apply bg-revolutionary-700 text-slate-50;
   }
 }
 
 @layer components {
   /* Button styles: dark buttons */
   .btn-primary {
-    @apply bg-slate-900 hover:bg-slate-800 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-revolutionary-700 hover:bg-revolutionary-600 text-white font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
   }
 
   .btn-secondary {
-    @apply bg-indigo-900 hover:bg-indigo-800 text-indigo-50 font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
+    @apply bg-gold-600 hover:bg-gold-500 text-slate-900 font-medium px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-300;
   }
 
   .btn-outline {
-    @apply border-2 border-slate-900 text-slate-800 hover:bg-slate-900/5 font-medium px-6 py-3 rounded-lg transition-all duration-300;
+    @apply border-2 border-revolutionary-700 text-revolutionary-700 hover:bg-revolutionary-50 font-medium px-6 py-3 rounded-lg transition-all duration-300;
   }
 
   .dark .btn-primary {
@@ -57,7 +57,7 @@
   }
 
   .dark .btn-secondary {
-    @apply bg-indigo-300 hover:bg-indigo-200 text-slate-900;
+    @apply bg-gold-300 hover:bg-gold-200 text-slate-900;
   }
 
   .dark .btn-outline {
@@ -66,7 +66,7 @@
 
   /* Card styles */
   .card-classic {
-    @apply bg-white border border-slate-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
+    @apply bg-white border border-gold-200 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300;
   }
 
   .dark .card-classic {
@@ -75,51 +75,51 @@
 
   /* Input styles */
   .input-classic {
-    @apply bg-white border border-slate-300 text-slate-900 rounded-lg px-4 py-2 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 transition-all duration-200;
+    @apply bg-parchment-50 border border-gold-300 text-deeptext-900 rounded-lg px-4 py-2 focus:border-revolutionary-600 focus:ring-2 focus:ring-gold-200 transition-all duration-200;
   }
 
   .dark .input-classic {
-    @apply bg-slate-900 border-slate-700 text-slate-100 focus:border-indigo-400 focus:ring-indigo-900;
+    @apply bg-slate-900 border-slate-700 text-slate-100 focus:border-gold-400 focus:ring-revolutionary-900;
   }
 
   /* Gradients */
   .bg-classic-gradient {
-    @apply bg-gradient-to-br from-slate-50 via-white to-indigo-50;
+    @apply bg-gradient-to-br from-revolutionary-50 via-gold-50 to-white;
   }
 
   .dark .bg-classic-gradient {
-    @apply bg-gradient-to-br from-slate-950 via-slate-900 to-indigo-950;
+    @apply bg-gradient-to-br from-slate-950 via-slate-900 to-revolutionary-900;
   }
 
   /* Accent gradient */
   .bg-accent-gradient {
-    @apply bg-gradient-to-r from-indigo-600 via-sky-500 to-indigo-600;
+    @apply bg-gradient-to-r from-revolutionary-600 via-gold-500 to-revolutionary-600;
   }
 
   .dark .bg-accent-gradient {
-    @apply bg-gradient-to-r from-sky-500 via-indigo-500 to-sky-400;
+    @apply bg-gradient-to-r from-revolutionary-600 via-gold-500 to-revolutionary-600;
   }
 
   /* Decorative elements */
   .decorative-line {
-    @apply h-1 bg-gradient-to-r from-transparent via-indigo-500 to-transparent;
+    @apply h-1 bg-gradient-to-r from-transparent via-gold-500 to-transparent;
   }
 
   .dark .decorative-line {
-    @apply from-transparent via-sky-400 to-transparent;
+    @apply from-transparent via-gold-400 to-transparent;
   }
 
   /* Text colors */
   .text-classic-heading {
-    @apply text-indigo-700 font-serif font-bold;
+    @apply text-revolutionary-600 font-serif font-bold;
   }
 
   .dark .text-classic-heading {
-    @apply text-indigo-300;
+    @apply text-gold-300;
   }
 
   .text-classic-body {
-    @apply text-slate-700 leading-relaxed;
+    @apply text-deeptext-700 leading-relaxed;
   }
 
   .dark .text-classic-body {
@@ -128,7 +128,7 @@
 
   /* Borders */
   .border-classic {
-    @apply border border-slate-200;
+    @apply border border-gold-200;
   }
 
   .dark .border-classic {
@@ -146,7 +146,7 @@
 
   /* Scroll progress bar */
   .progress-bar-classic {
-    @apply bg-indigo-600;
+    @apply bg-revolutionary-600;
     height: 4px;
     position: fixed;
     top: 0;
@@ -156,7 +156,7 @@
   }
 
   .dark .progress-bar-classic {
-    @apply bg-sky-400;
+    @apply bg-gold-400;
   }
 }
 
@@ -178,11 +178,11 @@
 
   /* Gradient text */
   .text-gradient-classic {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-sky-500 to-indigo-600;
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-revolutionary-600 via-gold-500 to-revolutionary-600;
   }
 
   .dark .text-gradient-classic {
-    @apply from-sky-400 via-indigo-500 to-sky-300;
+    @apply from-gold-300 via-gold-400 to-gold-200;
   }
 
   /* Pattern backgrounds */
@@ -214,13 +214,13 @@
 
   /* Box with ornamental border */
   .box-ornamental {
-    @apply border-2 border-double border-indigo-500 bg-white p-6 rounded-lg;
+    @apply border-2 border-double border-gold-500 bg-white p-6 rounded-lg;
     box-shadow: inset 0 0 0 1px rgba(2, 6, 23, 0.06);
   }
 
   .dark .box-ornamental {
-    @apply border-sky-400 bg-slate-900;
-    box-shadow: inset 0 0 0 1px rgba(56, 189, 248, 0.2);
+    @apply border-gold-400 bg-slate-900;
+    box-shadow: inset 0 0 0 1px rgba(212, 175, 55, 0.25);
   }
 }
 
@@ -230,7 +230,7 @@
 }
 
 ::-webkit-scrollbar-track {
-  @apply bg-slate-100;
+  @apply bg-parchment-100;
 }
 
 .dark ::-webkit-scrollbar-track {
@@ -238,19 +238,19 @@
 }
 
 ::-webkit-scrollbar-thumb {
-  @apply bg-indigo-600 rounded-full;
+  @apply bg-revolutionary-600 rounded-full;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  @apply bg-indigo-700;
+  @apply bg-revolutionary-700;
 }
 
 .dark ::-webkit-scrollbar-thumb {
-  @apply bg-sky-500;
+  @apply bg-gold-500;
 }
 
 .dark ::-webkit-scrollbar-thumb:hover {
-  @apply bg-sky-400;
+  @apply bg-gold-400;
 }
 
 /* Smooth scroll behavior */
@@ -260,11 +260,11 @@ html {
 
 /* Focus styles */
  *:focus-visible {
-  @apply outline-none ring-2 ring-indigo-500 ring-offset-2 ring-offset-slate-50;
+  @apply outline-none ring-2 ring-revolutionary-500 ring-offset-2 ring-offset-parchment-50;
  }
 
  .dark *:focus-visible {
-  @apply ring-sky-400 ring-offset-slate-950;
+  @apply ring-gold-400 ring-offset-slate-950;
  }
 
 /* Print styles - maintain revolutionary look */

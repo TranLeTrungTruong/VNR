@@ -28,7 +28,7 @@ export default function About() {
 
   return (
     <section className="relative min-h-screen pt-20 overflow-hidden">
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
       <motion.div
         aria-hidden

@@ -31,8 +31,8 @@ export default function ChaptersSection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 overflow-hidden">
-      {/* Nền đồng bộ Hero/Header: gradient đỏ→tím + vignette + light sweep */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* Nền đồng bộ Hero/Header: gradient đỏ→vàng + vignette + light sweep */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_200px_rgba(0,0,0,0.55)]" />
       <motion.div
         aria-hidden
@@ -63,8 +63,8 @@ export default function ChaptersSection() {
         {/* Lưới chương */}
         <motion.div style={{ opacity }} className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {chaptersData.map((chapter, index) => (
+            <Link key={chapter.id} to={`/chapters/${chapter.slug}`} className="block">
             <motion.article
-              key={chapter.id}
               initial={{ opacity: 0, y: 50, scale: 0.97, rotateX: -15 }}
               whileInView={{ opacity: 1, y: 0, scale: 1, rotateX: 0 }}
               viewport={{ once: true }}
@@ -80,12 +80,12 @@ export default function ChaptersSection() {
                 transformStyle: "preserve-3d",
                 perspective: "1000px"
               }}
-              className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_15px_45px_rgba(0,0,0,0.28)]"
+              className="group relative overflow-hidden rounded-2xl border border-white/15 bg-white/5 backdrop-blur-md shadow-[0_15px_45px_rgba(0,0,0,0.28)] cursor-pointer"
             >
               {/* Accent gradient khi hover */}
               <motion.div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                              bg-gradient-to-tr from-red-500/20 via-yellow-500/15 to-purple-500/20"
+                              bg-gradient-to-tr from-red-500/25 via-yellow-500/20 to-red-500/25"
                 whileHover={{ scale: 1.1 }}
                 transition={{ duration: 0.4 }}
               />
@@ -132,14 +132,13 @@ export default function ChaptersSection() {
                   {isVietnamese ? chapter.description : chapter.descriptionEn}
                 </p>
 
-                {/* Link CTA đồng bộ CTA Hero */}
+                {/* CTA text (entire card is clickable) */}
                 <motion.div whileHover={{ x: 4 }} transition={{ type: "spring", stiffness: 400 }}>
-                  <Link
-                    to={`/chapters/${chapter.slug}`}
+                  <div
                     className="inline-flex items-center gap-2 font-semibold"
                     style={{
                       background:
-                        "linear-gradient(90deg, rgba(239,68,68,1) 0%, rgba(234,179,8,1) 50%, rgba(168,85,247,1) 100%)",
+                        "linear-gradient(90deg, rgba(234,179,8,1) 0%, rgba(255,232,163,1) 50%, rgba(255,255,255,1) 100%)",
                       WebkitBackgroundClip: "text",
                       backgroundClip: "text",
                       color: "transparent",
@@ -147,17 +146,18 @@ export default function ChaptersSection() {
                   >
                     <span>{t("home.chapters.explore")}</span>
                     <ArrowRight className="h-4 w-4 translate-x-0 group-hover:translate-x-1 transition-transform" />
-                  </Link>
+                  </div>
                 </motion.div>
               </div>
             </motion.article>
+            </Link>
           ))}
         </motion.div>
 
         {/* Parallax floating elements */}
         <motion.div
           style={{ y: y1 }}
-          className="absolute top-20 left-10 w-32 h-32 bg-red-500/10 rounded-full blur-3xl pointer-events-none"
+          className="absolute top-20 left-10 w-32 h-32 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"
         />
         <motion.div
           style={{ y: y2 }}

@@ -125,34 +125,46 @@ export default {
           css: {
             maxWidth: 'none',
             color: '#0f172a', // slate-900
+            '--tw-prose-bullets': '#D4AF37',
+            '--tw-prose-quotes': '#5a0000',
             a: {
-              color: '#4338ca', // indigo-600/700 family
+              color: '#7f0000', // revolutionary-700
               textDecoration: 'underline',
-              textDecorationColor: '#93c5fd', // sky-300
+              textDecorationColor: '#ffd75f', // gold-400
               '&:hover': {
-                color: '#4f46e5', // indigo-600
-                textDecorationColor: '#60a5fa', // sky-400
+                color: '#8B0000', // revolutionary-600
+                textDecorationColor: '#ffd75f', // gold-400
               },
             },
             h1: {
-              color: '#4338ca', // indigo-600/700
+              color: '#7f0000', // revolutionary-700
               fontWeight: '700',
             },
             h2: {
-              color: '#4f46e5', // indigo-600
+              color: '#8B0000', // revolutionary-600
               fontWeight: '600',
             },
             h3: {
-              color: '#6366f1', // indigo-500
+              color: '#B22222', // revolutionary-500
               fontWeight: '600',
             },
             strong: {
-              color: '#4338ca', // indigo-600/700
+              color: '#ffe8a3', // gold-300 (light gold)
               fontWeight: '600',
             },
             blockquote: {
-              borderLeftColor: '#60a5fa', // sky-400
-              color: '#334155', // slate-600
+              borderLeftColor: '#D4AF37', // gold-500
+              color: '#3C2F2F', // deep brown text
+            },
+            'ul > li::marker': { color: '#D4AF37' },
+            'ol > li::marker': { color: '#D4AF37' },
+          },
+        },
+        invert: {
+          css: {
+            strong: {
+              color: '#ffe8a3', // light gold in dark mode too
+              fontWeight: '600',
             },
           },
         },

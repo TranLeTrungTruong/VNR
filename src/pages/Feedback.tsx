@@ -76,8 +76,8 @@ export default function Feedback() {
   if (submitted) {
     return (
       <div className="relative min-h-screen pt-20 overflow-hidden">
-        {/* NỀN: gradient + vignette + light-sweep (chỉ màu, không đổi logic) */}
-        <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+        {/* NỀN: gradient + vignette + light-sweep (đồng bộ đỏ/vàng) */}
+        <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
         <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
         <motion.div
           aria-hidden
@@ -102,7 +102,7 @@ export default function Feedback() {
             <button
               onClick={() => setSubmitted(false)}
               className="px-6 py-2 rounded-lg text-white font-semibold transition-all"
-              style={{ background: "linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)" }}
+              style={{ background: "linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)" }}
             >
               Gửi phản hồi khác
             </button>
@@ -114,8 +114,8 @@ export default function Feedback() {
 
   return (
     <div className="relative min-h-screen pt-20 overflow-hidden">
-      {/* NỀN: gradient + vignette + light-sweep (chỉ màu) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* NỀN: gradient + vignette + light-sweep (đồng bộ đỏ/vàng) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
       <motion.div
         aria-hidden
@@ -132,7 +132,7 @@ export default function Feedback() {
         >
           <div
             className="w-20 h-20 rounded-2xl mx-auto mb-6 flex items-center justify-center shadow-lg"
-            style={{ background: "linear-gradient(135deg,#ef4444,#eab308,#a855f7)" }}
+            style={{ background: "linear-gradient(135deg,#eab308,#ffe8a3,#ffffff)" }}
           >
             <MessageCircle className="h-10 w-10 text-white" />
           </div>
@@ -247,7 +247,7 @@ export default function Feedback() {
               type="submit"
               disabled={!feedback.trim() || rating === 0 || isSubmitting}
               className="w-full flex items-center justify-center space-x-2 px-6 py-3 rounded-lg text-white font-semibold disabled:opacity-50 disabled:cursor-not-allowed transition-all"
-              style={{ background: "linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)" }}
+              style={{ background: "linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)" }}
             >
               <Send className="h-4 w-4" />
               <span>{isSubmitting ? "Đang gửi..." : "Gửi phản hồi"}</span>
@@ -266,7 +266,7 @@ export default function Feedback() {
         >
           <h3 className="font-semibold text-white mb-3">Các cách khác để liên hệ:</h3>
           <ul className="space-y-2 text-sm text-white/85">
-            <li>• Email: anhDiepProMax@gmail.com</li>
+            <li>• Email: vnr202nhom5@gmail.com</li>
             <li>• Điện thoại: 0399189976 </li>
             <li>• Facebook: Ho Chi Minh Ideology Vietnam</li>
           </ul>

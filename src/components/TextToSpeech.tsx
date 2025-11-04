@@ -65,7 +65,7 @@ export default function TextToSpeech({ text, className = '' }: TextToSpeechProps
   return (
     <button
       onClick={toggleReading}
-      className={`flex items-center space-x-2 px-4 py-2 bg-blue-600 hover:bg-blue-700 text-white rounded-lg transition-colors ${className}`}
+      className={`flex items-center space-x-2 px-4 py-2 bg-revolutionary-600 hover:bg-revolutionary-700 text-white rounded-lg transition-colors ${className}`}
       title={isReading ? t('article.stopReading') : t('article.readAloud')}
     >
       {isReading ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}

@@ -58,7 +58,7 @@ const MessageBubbleInner = ({
         className={`${bubbleCommon} ${
           isUser
             ? "bg-white text-gray-900"
-            : "bg-parchment-50/95 dark:bg-brown-800/95 text-deeptext-900 dark:text-parchment-100"
+            : "bg-parchment-50/90 dark:bg-parchment-50/95 text-deeptext-900 dark:text-deeptext-900 dark:border-gold-500/20"
         }`}
       >
         <div className="flex items-start gap-3">
@@ -70,7 +70,7 @@ const MessageBubbleInner = ({
 
           <div className="flex-1 space-y-3">
             <div className={`prose prose-sm sm:prose-base max-w-none ${
-              isUser ? "prose-stone" : "prose-stone dark:prose-invert"
+              isUser ? "prose-stone" : "prose-stone"
             }`}>
               <ReactMarkdown remarkPlugins={[remarkGfm]}>
                 {message.content}
@@ -327,7 +327,7 @@ REMINDER: ONLY ANSWER QUESTIONS ABOUT VNR202 COURSE CONTENT. DECLINE ALL OTHER Q
                         duration: 1.2,
                         ease: "easeInOut",
                       }}
-                      className={`${bubbleCommon} w-fit bg-gold-100/50 dark:bg-gold-900/30 text-deeptext-700 dark:text-gold-200`}
+                      className={`${bubbleCommon} w-fit bg-gold-100/60 dark:bg-gold-100/50 text-deeptext-700 dark:text-deeptext-800`}
                     >
                       <div className="flex items-center gap-2 text-sm">
                         <Sparkles className="h-4 w-4 animate-spin" />

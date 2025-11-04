@@ -25,7 +25,7 @@ export default function MouseFollower() {
   return (
     <>
       <motion.div
-        className="fixed top-0 left-0 w-5 h-5 bg-red-500/50 rounded-full pointer-events-none z-50 mix-blend-screen"
+        className="fixed top-0 left-0 w-5 h-5 bg-amber-500/50 rounded-full pointer-events-none z-50 mix-blend-screen"
         style={{
           x: cursorXSpring,
           y: cursorYSpring,
@@ -41,7 +41,7 @@ export default function MouseFollower() {
           translateY: '-50%',
         }}
       >
-        <div className="w-full h-full bg-gradient-radial from-yellow-500/20 via-red-500/10 to-transparent rounded-full blur-2xl" />
+        <div className="w-full h-full bg-gradient-radial from-yellow-500/20 via-amber-500/10 to-transparent rounded-full blur-2xl" />
       </motion.div>
     </>
   );

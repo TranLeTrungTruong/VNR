@@ -8,18 +8,41 @@ import {
   CircleCheck as CheckCircle,
   Users,
 } from "lucide-react";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
+import articles from "../data/articles.json";
+import chapters from "../data/chapters.json";
+import quizzesData from "../data/quizzes.json";
 
-const stats = [
-  { icon: BookOpen, value: 16, labelVi: "Bài viết triết học", labelEn: "Philosophy Articles" ,suffix: "+"},
-  { icon: Globe, value: 2, labelVi: "Ngôn ngữ hỗ trợ", labelEn: "Languages Supported" },
-  { icon: CheckCircle, value: 80, labelVi: "Câu hỏi quiz", labelEn: "Quiz Questions", suffix: "+" },
-  { icon: Users, value: 5, labelVi: "Chương học", labelEn: "Learning Chapters", suffix: "+" },
-];
+function useComputedStats() {
+  // articles.json is an array
+  const articlesCount = Array.isArray(articles) ? articles.length : 0;
+
+  // chapters.json is an array
+  const chaptersCount = Array.isArray(chapters) ? chapters.length : 0;
+
+  // quizzes.json is an object with chapter keys -> arrays of quizzes
+  const quizzesCount = useMemo(() => {
+    try {
+      const groups = quizzesData as Record<string, unknown>;
+      const lists = Object.values(groups).filter(Array.isArray) as Array<unknown[]>;
+      return lists.reduce((sum, list) => sum + list.length, 0);
+    } catch {
+      return 0;
+    }
+  }, []);
+
+  return [
+    { icon: BookOpen, value: articlesCount, labelVi: "Bài viết", labelEn: "Articles" },
+    { icon: Globe, value: 2, labelVi: "Ngôn ngữ hỗ trợ", labelEn: "Languages Supported" },
+    { icon: CheckCircle, value: quizzesCount, labelVi: "Bài quiz", labelEn: "Quizzes" },
+    { icon: Users, value: chaptersCount, labelVi: "Chương học", labelEn: "Learning Chapters" },
+  ] as const;
+}
 
 export default function StatsSection() {
   const { i18n } = useTranslation();
   const isVietnamese = i18n.language === "vi";
+  const stats = useComputedStats();
   const sectionRef = useRef<HTMLDivElement>(null);
   const { scrollYProgress } = useScroll({
     target: sectionRef,
@@ -45,8 +68,8 @@ export default function StatsSection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 overflow-hidden">
-      {/* Nền đồng bộ Hero: gradient đỏ→tím + vignette + light sweep nhẹ */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* Nền đồng bộ Hero: gradient đỏ→vàng + vignette + light sweep nhẹ */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_200px_rgba(0,0,0,0.55)]" />
       <motion.div
         aria-hidden
@@ -92,7 +115,7 @@ export default function StatsSection() {
               <motion.div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-30"
                 style={{
-                  background: "linear-gradient(90deg, #ef4444, #f59e0b, #a855f7, #ef4444)",
+                  background: "linear-gradient(90deg, #eab308, #ffe8a3, #ffffff)",
                   filter: "blur(20px)",
                   zIndex: -1
                 }}
@@ -130,7 +153,7 @@ export default function StatsSection() {
                 className="mx-auto mt-3 h-[2px] w-10 rounded-full"
                 style={{
                   background:
-                    "linear-gradient(90deg, rgba(239,68,68,0.9) 0%, rgba(234,179,8,0.9) 50%, rgba(168,85,247,0.9) 100%)",
+                    "linear-gradient(90deg, rgba(239,68,68,0.9) 0%, rgba(234,179,8,0.9) 50%, rgba(239,68,68,0.9) 100%)",
                 }}
               />
             </motion.div>
@@ -140,7 +163,7 @@ export default function StatsSection() {
         {/* Parallax floating orbs */}
         <motion.div
           style={{ y, rotate }}
-          className="absolute -top-10 left-20 w-40 h-40 bg-red-500/10 rounded-full blur-3xl pointer-events-none"
+          className="absolute -top-10 left-20 w-40 h-40 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"
         />
         <motion.div
           style={{ y: useTransform(scrollYProgress, [0, 1], [-30, 30]) }}

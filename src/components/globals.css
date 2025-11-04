@@ -8,10 +8,10 @@
   --footer-border: rgba(28, 25, 23, 0.12); /* viền card/chip */
   --footer-chip: rgba(255, 255, 255, 0.75); /* chip khẩu hiệu */
 
-  /* Accent gradient đồng bộ: đỏ → vàng → tím */
+  /* Accent gradient đồng bộ: đỏ → vàng */
   --footer-accent-start: #ef4444; /* red-500 */
   --footer-accent-mid: #eab308; /* amber-500 */
-  --footer-accent-end: #a855f7; /* purple-500 */
+  --footer-accent-end: #ef4444; /* replaced purple with red for consistency */
 }
 
 /* Dark theme: chuyển sang kính mờ tối + chữ trắng vừa phải */
@@ -23,10 +23,10 @@
   --footer-border: rgba(255, 255, 255, 0.15);
   --footer-chip: rgba(255, 255, 255, 0.1);
 
-  /* Accent giữ nguyên để đồng bộ với phần khác */
+  /* Accent giữ nguyên để đồng bộ với phần khác (không còn tím) */
   --footer-accent-start: #ef4444;
   --footer-accent-mid: #eab308;
-  --footer-accent-end: #a855f7;
+  --footer-accent-end: #ef4444;
 }
 
 /* (tuỳ chọn) nếu muốn áp một preset “heroic” cho cả light lẫn dark: */

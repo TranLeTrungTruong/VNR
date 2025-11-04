@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function AnimatedBackground() {
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none">
+    <div className="fixed inset-0 -z-10 overflow-hidden pointer-events-none hidden sm:block">
       <motion.div
         className="absolute -top-1/2 -left-1/2 w-full h-full bg-gradient-radial from-revolutionary-600/8 via-transparent to-transparent"
         animate={{

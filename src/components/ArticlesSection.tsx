@@ -30,8 +30,8 @@ export default function ArticlesSection() {
 
   return (
     <section ref={sectionRef} className="relative py-20 overflow-hidden">
-      {/* Nền đồng bộ Hero/Header: gradient đỏ→tím + vignette + light sweep */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* Nền đồng bộ Hero/Header: gradient đỏ→vàng + vignette + light sweep */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_200px_rgba(0,0,0,0.55)]" />
       <motion.div
         aria-hidden
@@ -87,7 +87,7 @@ export default function ArticlesSection() {
               {/* Accent gradient khi hover */}
               <motion.div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300
-                              bg-gradient-to-tr from-red-500/25 via-yellow-500/20 to-purple-500/25"
+                              bg-gradient-to-tr from-red-500/25 via-yellow-500/20 to-red-500/25"
                 whileHover={{ scale: 1.05, rotate: 2 }}
                 transition={{ duration: 0.4 }}
               />
@@ -96,7 +96,7 @@ export default function ArticlesSection() {
               <motion.div
                 className="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100"
                 style={{
-                  background: "linear-gradient(90deg, #ef4444, #f59e0b, #a855f7)",
+                  background: "linear-gradient(90deg, #eab308, #ffe8a3, #ffffff)",
                   filter: "blur(10px)",
                   zIndex: -1
                 }}
@@ -139,13 +139,13 @@ export default function ArticlesSection() {
                   {isVietnamese ? article.excerpt : article.excerptEn}
                 </p>
 
-                {/* CTA đọc thêm: gradient chữ đỏ→vàng→tím */}
+                {/* CTA đọc thêm: gradient chữ đỏ→vàng→đỏ */}
                 <motion.div whileHover={{ x: 4 }} transition={{ type: "spring", stiffness: 400 }}>
                   <div
                     className="inline-flex items-center gap-2 font-semibold"
                     style={{
                       background:
-                        "linear-gradient(90deg, rgba(239,68,68,1) 0%, rgba(234,179,8,1) 50%, rgba(168,85,247,1) 100%)",
+                        "linear-gradient(90deg, rgba(234,179,8,1) 0%, rgba(255,232,163,1) 50%, rgba(255,255,255,1) 100%)",
                       WebkitBackgroundClip: "text",
                       backgroundClip: "text",
                       color: "transparent",
@@ -164,7 +164,7 @@ export default function ArticlesSection() {
         {/* Parallax decorative elements */}
         <motion.div
           style={{ rotate }}
-          className="absolute top-10 right-20 w-64 h-64 bg-purple-500/10 rounded-full blur-3xl pointer-events-none"
+          className="absolute top-10 right-20 w-64 h-64 bg-amber-500/10 rounded-full blur-3xl pointer-events-none"
         />
       </motion.div>
     </section>

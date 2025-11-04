@@ -21,7 +21,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
         className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/15 shadow-lg p-8"
       >
         <div className="flex items-center gap-3 mb-6">
-          <div className="p-3 bg-gradient-to-br from-purple-600 to-pink-600 rounded-xl">
+          <div className="p-3 bg-gradient-to-br from-revolutionary-600 to-gold-500 rounded-xl">
             <Brain className="h-6 w-6 text-white" />
           </div>
           <h2 className="text-2xl font-bold text-white">
@@ -31,12 +31,12 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
 
         {loading ? (
           <div className="flex items-center justify-center py-12">
-            <Loader2 className="h-8 w-8 animate-spin text-purple-600" />
+            <Loader2 className="h-8 w-8 animate-spin text-amber-500" />
           </div>
         ) : systemInfo ? (
           <div className="space-y-4">
             <div className="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10">
-              <Bot className="h-5 w-5 text-purple-400 mt-0.5 flex-shrink-0" />
+              <Bot className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-white mb-1">
                   {isVietnamese ? "Mô hình AI hiện tại" : "Current AI Model"}
@@ -46,7 +46,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10">
-              <Code className="h-5 w-5 text-blue-400 mt-0.5 flex-shrink-0" />
+              <Code className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-white mb-1">Bolt New</p>
                 <p className="text-sm text-white/80">v{systemInfo.boltVersion}</p>
@@ -82,7 +82,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
         className="bg-white/10 backdrop-blur-md rounded-2xl border border-white/15 shadow-lg p-8"
       >
         <div className="flex items-center gap-3 mb-6">
-          <div className="p-3 bg-gradient-to-br from-blue-600 to-cyan-600 rounded-xl">
+          <div className="p-3 bg-gradient-to-br from-revolutionary-600 to-gold-500 rounded-xl">
             <Server className="h-6 w-6 text-white" />
           </div>
           <h2 className="text-2xl font-bold text-white">
@@ -92,7 +92,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
 
         {loading ? (
           <div className="flex items-center justify-center py-12">
-            <Loader2 className="h-8 w-8 animate-spin text-blue-600" />
+            <Loader2 className="h-8 w-8 animate-spin text-amber-500" />
           </div>
         ) : systemInfo ? (
           <div className="space-y-4">
@@ -105,7 +105,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10">
-              <Code className="h-5 w-5 text-cyan-400 mt-0.5 flex-shrink-0" />
+              <Code className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-white mb-1">React</p>
                 <p className="text-sm text-white/80">v{systemInfo.reactVersion}</p>
@@ -113,7 +113,7 @@ export function AboutTechHighlights({ loading, systemInfo }: AboutTechHighlights
             </div>
 
             <div className="flex items-start gap-3 p-4 bg-white/10 backdrop-blur-sm rounded-xl border border-white/10">
-              <Code className="h-5 w-5 text-violet-400 mt-0.5 flex-shrink-0" />
+              <Code className="h-5 w-5 text-amber-400 mt-0.5 flex-shrink-0" />
               <div className="flex-1">
                 <p className="text-sm font-semibold text-white mb-1">Vite</p>
                 <p className="text-sm text-white/80">v{systemInfo.viteVersion}</p>

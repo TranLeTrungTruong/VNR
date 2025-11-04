@@ -35,10 +35,12 @@ export default function Article() {
           </h2>
           <Link
             to="/chapters"
-            className="font-semibold text-white px-4 py-2 rounded-lg"
-            style={{ background: 'linear-gradient(90deg,#ef4444,#eab308,#a855f7)' }}
+            className="inline-flex items-center gap-2 font-semibold text-white px-4 py-2 rounded-lg"
+            style={{ background: 'linear-gradient(90deg,#eab308,#ffe8a3,#ffffff)' }}
+            title="Trở về"
+            aria-label="Trở về"
           >
-            Về danh sách chương
+            <ArrowLeft className="h-5 w-5 text-white/90" />
           </Link>
         </div>
       </div>
@@ -51,8 +53,8 @@ export default function Article() {
     <div className="relative min-h-screen overflow-hidden">
       <ReadingProgressBar />
 
-      {/* Nền: gradient + vignette + light sweep (chỉ đổi màu, không đổi logic) */}
-      <div className="absolute inset-0 bg-gradient-to-br from-red-800/40 via-purple-900/50 to-fuchsia-900/60" />
+      {/* Nền: gradient + vignette + light sweep (đồng bộ đỏ/vàng) */}
+      <div className="absolute inset-0 bg-gradient-to-br from-revolutionary-900/35 via-gold-700/20 to-black/60" />
       <div className="pointer-events-none absolute inset-0 [box-shadow:inset_0_0_220px_rgba(0,0,0,0.6)]" />
       <motion.div
         aria-hidden
@@ -69,18 +71,19 @@ export default function Article() {
             animate={{ opacity: 1, x: 0 }}
             className="mb-8"
           >
-            <Link
-              to="/chapters"
-              className="inline-flex items-center gap-2 font-semibold"
+          <Link
+            to="/chapters"
+            className="inline-flex items-center gap-2 font-semibold"
               style={{
-                background: 'linear-gradient(90deg,#ef4444 0%, #eab308 50%, #a855f7 100%)',
+                background: 'linear-gradient(90deg,#eab308 0%, #ffe8a3 50%, #ffffff 100%)',
                 WebkitBackgroundClip: 'text',
                 backgroundClip: 'text',
                 color: 'transparent',
               }}
+            title="Trở về"
+            aria-label="Trở về"
             >
-              <ArrowLeft className="h-4 w-4" />
-              <span>{t('article.backToChapter')}</span>
+            <ArrowLeft className="h-5 w-5 text-white/90" aria-hidden />
             </Link>
           </motion.div>
 
@@ -199,15 +202,15 @@ export default function Article() {
                       </ol>
                     ),
                     blockquote: ({ children }) => (
-                      <blockquote
-                        className="pl-6 py-3 my-6 rounded-lg text-white/90"
-                        style={{
-                          borderLeft: '4px solid transparent',
-                          background:
-                            'linear-gradient(90deg, rgba(239,68,68,.12), rgba(234,179,8,.12), rgba(168,85,247,.12))',
-                          boxShadow: 'inset 4px 0 0 #ef4444',
-                        }}
-                      >
+                    <blockquote
+                      className="pl-6 py-3 my-6 rounded-lg text-white/90"
+                      style={{
+                        borderLeft: '4px solid transparent',
+                        background:
+                          'linear-gradient(90deg, rgba(239,68,68,.12), rgba(234,179,8,.12), rgba(239,68,68,.12))',
+                        boxShadow: 'inset 4px 0 0 #ef4444',
+                      }}
+                    >
                         {children}
                       </blockquote>
                     ),
@@ -232,7 +235,7 @@ export default function Article() {
                           color: 'white',
                           borderColor: 'rgba(255,255,255,0.25)',
                           background:
-                            'linear-gradient(90deg, rgba(239,68,68,.15), rgba(234,179,8,.15), rgba(168,85,247,.15))',
+                            'linear-gradient(90deg, rgba(239,68,68,.15), rgba(234,179,8,.15), rgba(239,68,68,.15))',
                           backdropFilter: 'blur(4px)',
                         }}
                       >
